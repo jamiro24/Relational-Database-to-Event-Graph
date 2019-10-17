@@ -20,27 +20,27 @@ try:
     conn.execute('''
         CREATE TABLE Change (
             'ID' int PRIMARY KEY,
-            'CI Name (aff)' text,
-            'CI Type (aff)' text,
-            'CI Subtype (aff)' text,
-            'Service Component WBS (aff)' text,
-            'Change ID' text,
-            'Change Type' text,
-            'Risk Assessment' text,
-            'Emergency Change' text,
-            'CAB-approval needed' text,
-            'Planned Start' date,
-            'Planned End' date,
-            'Scheduled Downtime Start' date,
-            'Scheduled Downtime End' date,
-            'Actual Start' date,
-            'Actual End' date,
-            'Requested End Date' date,
-            'Change record Open Time' date,
-            'Change record Close Time' date,
-            'Originated from' text,
-            '# Related Interactions' int,
-            '# Related Incidents' int
+            'CI_Name_aff' text,
+            'CI_Type_aff' text,
+            'CI_Subtype_aff' text,
+            'Service_Component_WBS_aff' text,
+            'Change_ID' text,
+            'Change_Type' text,
+            'Risk_Assessment' text,
+            'Emergency_Change' text,
+            'CAB_approval_needed' text,
+            'Planned_Start' date,
+            'Planned_End' date,
+            'Scheduled_Downtime_Start' date,
+            'Scheduled_Downtime_End' date,
+            'Actual_Start' date,
+            'Actual_End' date,
+            'Requested_End_Date' date,
+            'Change_record_Open_Time' date,
+            'Change_record_Close_Time' date,
+            'Originated_from' text,
+            'Nr_Related_Interactions' int,
+            'Nr_Related_Incidents' int
         )
     ''')
     print("Create `Change` table")
@@ -51,34 +51,34 @@ try:
     conn.execute('''
         CREATE TABLE Incident(
             'ID' int PRIMARY KEY,
-            'CI Name (aff)' text,
-            'CI Type (aff)' text,
-            'CI Subtype (aff)' text,
-            'Service Component WBS (aff)' text,
-            'Incident ID' text,
+            'CI_Name_aff' text,
+            'CI_Type_aff' text,
+            'CI_Subtype_aff' text,
+            'Service_Component_WBS_aff' text,
+            'Incident_ID' text,
             'Status' text,
             'Impact' text,
             'Urgency' text,
             'Priority' text,
             'Category' text,
-            'KM number' text,
-            'Alert Status' text,
-            '# Reassignments' int,
-            'Open Time' date,
-            'Reopen Time' date,
-            'Resolved Time' date,
-            'Close Time' date,
-            'Handle Time (Hours)' date,
-            'Closure Code' text,
-            '# Related Interactions' int,
-            'Related Interaction' text,
-            '# Related Incidents' int,
-            '# Related Changes' int,
-            'Related Change' text,
-            'CI Name (CBy)' text,
-            'CI Type (CBy)' text,
-            'CI Subtype (CBy)' text,
-            'ServiceComp WBS (CBy)' text
+            'KM_number' text,
+            'Alert_Status' text,
+            'Nr_Reassignments' int,
+            'Open_Time' date,
+            'Reopen_Time' date,
+            'Resolved_Time' date,
+            'Close_Time' date,
+            'Handle_Time_Hours' date,
+            'Closure_Code' text,
+            'Nr_Related_Interactions' int,
+            'Related_Interaction' text,
+            'Nr_Related_Incidents' int,
+            'Nr_Related_Changes' int,
+            'Related_Change' text,
+            'CI_Name_CBy' text,
+            'CI_Type_CBy' text,
+            'CI_Subtype_CBy' text,
+            'ServiceComp_WBS_CBy' text
         )
     ''')
     print("Create `Incident` table")
@@ -89,24 +89,24 @@ try:
     conn.execute('''
         CREATE TABLE Interaction(
             'ID' int PRIMARY KEY,
-            'CI Name (aff)' text,
-            'CI Type (aff)' text,
-            'CI Subtype (aff)' text,
-            'Service Comp WBS (aff)' text,
-            'Interaction ID' text,
+            'CI_Name_aff' text,
+            'CI_Type_aff' text,
+            'CI_Subtype_aff' text,
+            'Service_Comp_WBS_aff' text,
+            'Interaction_ID' text,
             'Status' text,
             'Impact' int,
             'Urgency' text,
             'Priority' int,
             'Category' text,
-            'KM number' text,
-            'Open Time (First Touch)' date,
-            'Close Time' date,
-            'Closure Code' text,
-            'First Call Resolution' text,
-            'Handle Time (secs)' int,
-            'Related Incident' text,
-            FOREIGN KEY('Related Incident') REFERENCES Incident('Incident ID')
+            'KM_number' text,
+            'Open_Time_First_Touch' date,
+            'Close_Time' date,
+            'Closure_Code' text,
+            'First_Call_Resolution' text,
+            'Handle_Time_secs' int,
+            'Related_Incident' text,
+            FOREIGN KEY('Related_Incident') REFERENCES Incident('Incident_ID')
         )
     ''')
     print("Create `Interaction` table")
@@ -116,20 +116,20 @@ except OperationalError as e:
 
 try:
     conn.execute('''
-        CREATE TABLE 'Incident Activity'(
+        CREATE TABLE 'Incident_Activity'(
             'ID' int PRIMARY KEY,
-            'Incident ID' text,
+            'Incident_ID' text,
             'DateStamp' date,
             'IncidentActivity_Number' text,
             'IncidentActivity_Type' text,
-            'Assignment Group' text,
-            'KM number' text,
-            'Interaction ID' text,
-            FOREIGN KEY('Incident ID') REFERENCES Incident('Incident ID'),
-            FOREIGN KEY('Interaction ID') REFERENCES Interaction('Interaction ID')
+            'Assignment_Group' text,
+            'KM_number' text,
+            'Interaction_ID' text,
+            FOREIGN KEY('Incident_ID') REFERENCES Incident('Incident_ID'),
+            FOREIGN KEY('Interaction_ID') REFERENCES Interaction('Interaction_ID')
         )
     ''')
-    print("Create `Incident Activity` table")
+    print("Create `Incident_Activity` table")
 except OperationalError as e:
     print(e)
 
@@ -166,10 +166,11 @@ def insert_value_sql(df: pd.DataFrame, types: list, table_name: str) -> str:
 def insert(df: pd.DataFrame, name: str, types: list):
     insert_query = insert_value_sql(df, types, name)
     conn.execute(insert_query)
+    conn.commit()
     print(f"inserted values into `{name}` table")
 
 
 insert(change, "Change", ['text']*9+['date']*9+['text']+['int']*2)
 insert(incident, "Incident", ['text']*12 + ['int'] + ['date']*5 + ['text', 'int']*2 + ['int'] + ['text']*5)
 insert(interaction, "Interaction",  ['text']*6 + ['int', 'text', 'int'] + ['text']*2 + ['date']*2 + ['text']*2 + ['int', 'text'])
-insert(incident_activity, "'Incident Activity'", ['text', 'date'] + ['text']*5)
+insert(incident_activity, "Incident_Activity", ['text', 'date'] + ['text']*5)
