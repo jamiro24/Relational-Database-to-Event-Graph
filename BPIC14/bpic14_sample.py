@@ -18,63 +18,66 @@ output_conn = sql.connect("bpic14.sample.db")
 
 config = {
     "start_time": "2013-01-01",
-    "end_time": "2013-04-01"
+    "end_time": "2013-02-01"
 }
 
 incident_query = f"""
-    select *
-    from Incident
-    where Open_Time between date("{config["start_time"]}") and date("{config["end_time"]}")
+    SELECT *
+    FROM Incident
+    WHERE Incident_ID IN (
+        SELECT Related_Incident
+        FROM Interaction
+        WHERE Service_Comp_WBS_aff IN (
+            select DISTINCT Service_Component_WBS_aff
+            FROM Change
+            LIMIT 5
+        )
+    ) OR Incident_ID IN (
+        SELECT Incident_ID
+        FROM Incident_Activity
+        WHERE Interaction_ID IN (
+            SELECT Interaction_ID
+                FROM Interaction
+                WHERE Service_Comp_WBS_aff IN (
+                    select DISTINCT Service_Component_WBS_aff
+                    FROM Change
+                    LIMIT 5
+            )
+        )
+    )
 """
 
 activity_query = f"""
-    select *
-    from Incident_Activity
-    where Incident_ID IN (
-        select Incident_ID
-        from Incident
-        where Open_Time between date("{config["start_time"]}") and date("{config["end_time"]}")
+    SELECT *
+    FROM Incident_Activity
+    WHERE Interaction_ID IN (
+        SELECT Interaction_ID
+            FROM Interaction
+            WHERE Service_Comp_WBS_aff IN (
+                select DISTINCT Service_Component_WBS_aff
+                FROM Change
+                LIMIT 5
+        )
     )
 """
 
 interaction_query = f"""
-    select *
-    from Interaction
-    where Interaction_ID IN (
-        select Interaction_ID
-        from Incident_Activity
-        where Incident_ID IN (
-            select Incident_ID
-            from Incident
-            where Open_Time between date("{config["start_time"]}") and date("{config["end_time"]}")
-        )
+    SELECT *
+    FROM Interaction
+    WHERE Service_Comp_WBS_aff IN (
+        select DISTINCT Service_Component_WBS_aff
+        FROM Change
+        LIMIT 5
     )
 """
 
 change_query = f"""
-    select * from Change
-    where CI_Name_aff in (
-        select CI_Name_aff
-        from Interaction
-        where Interaction_ID IN (
-            select Interaction_ID
-            from Incident_Activity
-            where Incident_ID IN (
-                select Incident_ID
-                from Incident
-                where Open_Time between date("{config["start_time"]}") and date("{config["end_time"]}")
-            )
-        )
-    )
-    or CI_Name_aff in (
-        select CI_Name_aff
-        from Incident
-        where Open_Time between date("{config["start_time"]}") and date("{config["end_time"]}")
-    )
-    or CI_Name_aff in (
-        select CI_Name_CBy
-        from Incident
-        where Open_Time between date("{config["start_time"]}") and date("{config["end_time"]}")
+    SELECT *
+    FROM Change
+    WHERE Service_Component_WBS_aff IN (
+        select DISTINCT Service_Component_WBS_aff
+        FROM Change
+        LIMIT 5
     )
 """
 
