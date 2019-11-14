@@ -10,11 +10,11 @@ import pandas as pd
 # Takes all changes with CI in the list of CIs in incident aff, cby and interaction aff
 
 
-if os.path.exists("bpic14.sample.db"):
-    os.remove("bpic14.sample.db")
+if os.path.exists("bpic14.sample_2.db"):
+    os.remove("bpic14.sample_2.db")
 
 input_conn = sql.connect("bpic14.db")
-output_conn = sql.connect("bpic14.sample.db")
+output_conn = sql.connect("bpic14.sample_2.db")
 
 config = {
     "start_time": "2013-01-01",
@@ -30,7 +30,7 @@ incident_query = f"""
         WHERE Service_Comp_WBS_aff IN (
             select DISTINCT Service_Component_WBS_aff
             FROM Change
-            LIMIT 5
+            LIMIT 1
         )
     ) OR Incident_ID IN (
         SELECT Incident_ID
@@ -41,7 +41,7 @@ incident_query = f"""
                 WHERE Service_Comp_WBS_aff IN (
                     select DISTINCT Service_Component_WBS_aff
                     FROM Change
-                    LIMIT 5
+                    LIMIT 1
             )
         )
     )
@@ -56,7 +56,7 @@ activity_query = f"""
             WHERE Service_Comp_WBS_aff IN (
                 select DISTINCT Service_Component_WBS_aff
                 FROM Change
-                LIMIT 5
+                LIMIT 1
         )
     )
 """
@@ -67,7 +67,7 @@ interaction_query = f"""
     WHERE Service_Comp_WBS_aff IN (
         select DISTINCT Service_Component_WBS_aff
         FROM Change
-        LIMIT 5
+        LIMIT 1
     )
 """
 
@@ -77,7 +77,7 @@ change_query = f"""
     WHERE Service_Component_WBS_aff IN (
         select DISTINCT Service_Component_WBS_aff
         FROM Change
-        LIMIT 5
+        LIMIT 1
     )
 """
 
