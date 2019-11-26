@@ -165,7 +165,7 @@ def create_db(conn):
                 FOREIGN KEY ('Incident_ID') REFERENCES Incident('Incident_ID'),
                 FOREIGN KEY ('Interaction_ID') REFERENCES Interaction('Interaction_ID'),
                 FOREIGN KEY ('KM_number') REFERENCES Knowledge_Document('ID'),
-                FOREIGN KEY ('Assignment_Group') REFERENCES Assignment_GROUP('ID')
+                FOREIGN KEY ('Assignment_Group') REFERENCES Assignment_Group('ID')
             )
         ''')
         print("Create `Incident_Activity` table")

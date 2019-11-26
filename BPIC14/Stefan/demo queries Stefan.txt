@@ -1,0 +1,81 @@
+## Questions for Stefan
+## * start timestamp property not in the list of properties
+## no problem
+## * What are all the differnt IDs for
+## need when matching entites over different logs, still need unique id (log+entity type+ID)
+## * Import speed programatically vs load csv
+## no speed difference
+## * How is sample chosen
+##
+## * Multiple event nodes per entity
+## no problem
+## * connections between entities
+## pattern exists. if one to many or many to many, graph becomes unreadable, specific in formulating queries (How to determine type of relationship between each other). 
+## useful or not?
+## * different DF relations?
+## list of entites that connect to both source and target
+
+
+The only thing that’s not implemented yet is the connection between the different logs (all 4 get imported to the graph, but separated from each other). 
+This will be implemented as “reference nodes” for coinciding entities  (or events respectively – identifying these events is hard when working with 
+flat event logs) and [:EN_COINCIDE] relationships to map the (probably) coinciding entities from the different logs.
+
+
+# Change with direct connections 
+MATCH (n:Entity {EntityType: "Change", ID: "CHGC00000195"})-[r]-(t)
+WHERE NOT "Log" in Labels(t)
+RETURN *
+
+# Change with 1..2 connections
+MATCH (n:Entity {EntityType: "Change", ID: "CHGC00000195"})-[r*1..2]-(t)
+WHERE NOT "Log" in Labels(t)
+RETURN *
+
+# All entity types get the same `Entity` label, with a property `EntityType` to indicate the entity type.
+# Entities do not have connections to each other (even within the same table, as Stefan said the different tables have not been connected yet)
+# Entities are only connected via events.
+# Each event has multiple timestamps (e.g. ActualEnd, ActualStart, PlannedStart, PlannedEnd, Start, End)
+# Start, End are not in the original dataset, some other timestamp properties are missing, They are renamed to the generic start and end
+# Event properties are on events
+# Case properties are on entities
+# Every row in changes gets one event node, multiple event columns are not used
+
+# Entity types:
+# "IncidentActivity"
+# "Change"
+# "KM"
+# "CI"
+# "Interaction"
+# "Group"
+# "Incident"
+# "ServiceComponent"
+
+# Incident Activity with direct connections
+Match (n:Entity {EntityType: "IncidentActivity", ID: "IND001A5780965"})-[r]-(t)
+RETURN *
+
+# Knowledge Document with direct connections
+Match (n:Entity {EntityType: "KM", ID:"INCKM0001270"}) -[r]-(t)
+RETURN *
+
+# Configuration Item with direct connections
+Match (n:Entity {EntityType: "CI", ID: "CHGDCE000011"}) -[r]-(t)
+RETURN *
+
+# Interaction with direct connections
+Match (n:Entity {EntityType: "Interaction", ID:"INCSD0109272"}) -[r]-(t)
+RETURN *
+
+# Connected to 1 event, with end time equal to ResolvedTime and start time equal to OpenTime (but OpenTime not in the props of the entity)
+
+# Group with direct connections
+Match (n:Entity {EntityType: "Group", ID:"INDTEAM0075"})-[r]-(t)
+RETURN *
+
+# Incident with direct connections
+Match (n:Entity {EntityType: "Incident", ID:"INCIM0028675"})-[r]-(t)
+RETURN *
+
+# Service Component with direct connections
+Match (n:Entity {EntityType: "ServiceComponent", ID: "CHGWBS000162"})-[]-(t)
+RETURN *
