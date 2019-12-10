@@ -1,2 +1,0 @@
-Change ID is not unique, but for all rows with the same Change ID have the same values for 'blue' columns.
-I Assume this is also true for the other tables
