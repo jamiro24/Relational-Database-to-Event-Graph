@@ -4671,5 +4671,183 @@
         }
       }
     ]
+  },
+  {
+    "ent": {
+      "identity": 681,
+      "labels": [
+        "Entity"
+      ],
+      "properties": {
+        "EntityType": "Interaction",
+        "IDraw": "SD0075751",
+        "uID": "InteractionBPI14SD0075751",
+        "ID": "BPI14SD0075751",
+        "Log": "BPI14"
+      }
+    },
+    "events": [
+      {
+        "identity": 1014,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Status": "Closed",
+          "Impact": "5",
+          "Closure_Code": "Data",
+          "Interaction_ID": "SD0075751",
+          "Category": "incident",
+          "Start": "2014-01-03 11:45:00",
+          "Priority": "5",
+          "IDraw": "SD0075751",
+          "First_Call_Resolution": "N",
+          "Activity": "Interaction_Open_Time_First_Touch",
+          "KM_number": "KM0000036",
+          "Handle_Time_secs": "426",
+          "Service_Comp_WBS_aff": "WBS000195",
+          "EntityType": "Interaction",
+          "Open_Time_First_Touch": "2014-01-03 11:45:00",
+          "Close_Time": "2014-01-08 15:24:00",
+          "End": "2014-01-03 11:45:00",
+          "ID": "0",
+          "Urgency": "5",
+          "nodeid": "15",
+          "CI_ID_aff": "0",
+          "Related_Incident": "IM0025393"
+        }
+      },
+      {
+        "identity": 1042,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Status": "Closed",
+          "Impact": "5",
+          "Closure_Code": "Data",
+          "Interaction_ID": "SD0075751",
+          "Category": "incident",
+          "Start": "2014-01-08 15:24:00",
+          "Priority": "5",
+          "IDraw": "SD0075751",
+          "First_Call_Resolution": "N",
+          "Activity": "Interaction_Close_Time",
+          "KM_number": "KM0000036",
+          "Handle_Time_secs": "426",
+          "Service_Comp_WBS_aff": "WBS000195",
+          "EntityType": "Interaction",
+          "Open_Time_First_Touch": "2014-01-03 11:45:00",
+          "Close_Time": "2014-01-08 15:24:00",
+          "End": "2014-01-08 15:24:00",
+          "ID": "0",
+          "Urgency": "5",
+          "nodeid": "15",
+          "CI_ID_aff": "0",
+          "Related_Incident": "IM0025393"
+        }
+      }
+    ],
+    "df": [
+      {
+        "identity": 2962,
+        "start": 1014,
+        "end": 1042,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Interaction",
+          "EntityId": "BPI14SD0075751"
+        }
+      }
+    ]
+  },
+  {
+    "ent": {
+      "identity": 688,
+      "labels": [
+        "Entity"
+      ],
+      "properties": {
+        "EntityType": "Interaction",
+        "IDraw": "SD0121418",
+        "uID": "InteractionBPI14SD0121418",
+        "ID": "BPI14SD0121418",
+        "Log": "BPI14"
+      }
+    },
+    "events": [
+      {
+        "identity": 1045,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Status": "Closed",
+          "Impact": "3",
+          "Closure_Code": "Other",
+          "Interaction_ID": "SD0121418",
+          "Category": "incident",
+          "Start": "2014-03-31 16:00:00",
+          "Priority": "3",
+          "IDraw": "SD0121418",
+          "First_Call_Resolution": "N",
+          "Activity": "Interaction_Close_Time",
+          "KM_number": "KM0001274",
+          "Handle_Time_secs": "0",
+          "Service_Comp_WBS_aff": "WBS000195",
+          "EntityType": "Interaction",
+          "Open_Time_First_Touch": "2014-02-26 11:28:00",
+          "Close_Time": "2014-03-31 16:00:00",
+          "End": "2014-03-31 16:00:00",
+          "ID": "1",
+          "Urgency": "3",
+          "nodeid": "16",
+          "CI_ID_aff": "0",
+          "Related_Incident": "IM0039803"
+        }
+      },
+      {
+        "identity": 1035,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Status": "Closed",
+          "Impact": "3",
+          "Closure_Code": "Other",
+          "Interaction_ID": "SD0121418",
+          "Category": "incident",
+          "Start": "2014-02-26 11:28:00",
+          "Priority": "3",
+          "IDraw": "SD0121418",
+          "First_Call_Resolution": "N",
+          "Activity": "Interaction_Open_Time_First_Touch",
+          "KM_number": "KM0001274",
+          "Handle_Time_secs": "0",
+          "Service_Comp_WBS_aff": "WBS000195",
+          "EntityType": "Interaction",
+          "Open_Time_First_Touch": "2014-02-26 11:28:00",
+          "Close_Time": "2014-03-31 16:00:00",
+          "End": "2014-02-26 11:28:00",
+          "ID": "1",
+          "Urgency": "3",
+          "nodeid": "16",
+          "CI_ID_aff": "0",
+          "Related_Incident": "IM0039803"
+        }
+      }
+    ],
+    "df": [
+      {
+        "identity": 517,
+        "start": 1035,
+        "end": 1045,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Interaction",
+          "EntityId": "BPI14SD0121418"
+        }
+      }
+    ]
   }
 ]

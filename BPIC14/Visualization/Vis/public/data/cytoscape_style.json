@@ -1,0 +1,106 @@
+[
+  {
+    "selector": "node",
+    "style": {
+      "text-valign": "center",
+      "text-outline-width": "0.4px",
+      "text-outline-color": "#FFFFFF",
+      "font-size": "11px"
+    }
+  },
+  {
+    "selector": "edge",
+    "style": {
+      "width": 5,
+      "curve-style": "bezier",
+      "target-arrow-shape": "triangle",
+      "line-color": "#88ef41",
+      "target-arrow-color": "#88ef41"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"both\"]",
+    "style": {
+      "line-color": "#602495",
+      "target-arrow-color": "#602495"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"Mixed\"]",
+    "style": {
+      "line-style": "dashed",
+      "line-color": "#602495",
+      "target-arrow-color": "#602495"
+    }
+  },
+  {
+    "selector": "node[DataType = \"Common\"]",
+    "style": {
+      "background-color": "#f4dee2"
+    }
+  },
+  {
+    "selector": "node[DataType =\"Event\"]",
+    "style": {
+      "label": "data(id)"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"Incident\"]",
+    "style": {
+      "background-color": "#F47C7C"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"Mixed\"]",
+    "style": {
+      "background-color": "#602495"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"Interaction\"]",
+    "style": {
+      "background-color": "#77ca44"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"Interaction\"]",
+    "style": {
+      "line-color": "#77ca44",
+      "target-arrow-color": "#77ca44"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"Incident\"]",
+    "style": {
+      "line-color": "#F47C7C",
+      "target-arrow-color": "#F47C7C"
+    }
+  },
+  {
+    "selector": "edge[DataType = \"EC\"]",
+    "style": {
+      "line-color": "#f4dee2",
+      "target-arrow-color": "#f4dee2"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"Configuration_Item\"]",
+    "style": {
+      "background-color": "#80A1D7"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"Configuration_Item\"]",
+    "style": {
+      "line-color": "#80A1D7",
+      "target-arrow-color": "#80A1D7"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"both\"]",
+    "style": {
+      "background-color": "#602495"
+    }
+  }
+]
