@@ -18,7 +18,8 @@ async function render() {
         layout: {
             name: 'cola',
             infinite: true,
-            fit: false
+            fit: false,
+            boundingBox: undefined
         }
     });
 }

@@ -42,7 +42,7 @@
   {
     "selector": "node[DataType =\"Event\"]",
     "style": {
-      "label": "data(id)"
+      "label": "data(Activity)"
     }
   },
   {
