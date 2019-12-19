@@ -17,9 +17,11 @@ async function render() {
         style: await readJSON('cytoscape_style.json'),
         layout: {
             name: 'cola',
-            infinite: true,
+            //infinite: true,
             fit: false,
-            boundingBox: undefined
+            //boundingBox: undefined,
+            maxSimulationTime: 30000, // max length in ms to run the layout
+            //convergenceThreshold:0.0000000000000001, // when the alpha value (system energy) falls below this value, the layout stops
         }
     });
 }
