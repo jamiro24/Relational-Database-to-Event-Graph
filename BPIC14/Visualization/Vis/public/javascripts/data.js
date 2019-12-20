@@ -309,7 +309,7 @@ function removeEmptyCommons(elements) {
     let getEvent = eventGetterFactory(splitEles['Event']);
     let getEventsFromCommon = eventsFromCommonGetterFactory(splitEles['EC'], getEvent);
 
-    let removedIds = []
+    let removedIds = [];
 
     for (let i = 0; i < elements.length; i++) {
         if(elements.hasOwnProperty(i)) {
