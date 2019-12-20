@@ -35,6 +35,7 @@
     "style": {
       "line-style": "dashed",
       "line-color": "#602495",
+      "target-arrow-shape": "triangle",
       "target-arrow-color": "#602495"
     }
   },
@@ -73,6 +74,19 @@
     "style": {
       "line-color": "#77ca44",
       "target-arrow-color": "#77ca44"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"Change\"]",
+    "style": {
+      "background-color": "#fcc203"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"Change\"]",
+    "style": {
+      "line-color": "#fcc203",
+      "target-arrow-color": "#fcc203"
     }
   },
   {

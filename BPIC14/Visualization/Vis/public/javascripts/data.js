@@ -33,15 +33,30 @@ function transformJsonEntity(json) {
 }
 
 function transformJsonCommon(json) {
-    let obj = {
-        data: {
-            id: json.identity,
-            DataType: 'Common',
-            ...json.properties
+    if (Array.isArray(json)) {
+        let res = [];
+        for (let i in json) {
+            let obj = {
+                data: {
+                    id: json[i].identity,
+                    DataType: 'Common',
+                    ...json[i].properties
+                }
+            };
+            res.push(obj)
         }
-    };
+        return res
+    } else {
+        let obj = {
+            data: {
+                id: json.identity,
+                DataType: 'Common',
+                ...json.properties
+            }
+        };
 
-    return [obj]
+        return [obj]
+    }
 }
 
 function transformJsonECs(json) {
@@ -130,7 +145,6 @@ function splitElements(elements) {
 
 // Calculates the global DF structure and returns all elements that need to be added to graph in order to show it.
 function calculateGlobalDF(splitElements) {
-    console.log(splitElements);
     let sortedEvents = splitElements['Event'].sort(eventSorter(splitElements['Event'], splitElements['DF']));
     let getEvent = eventGetterFactory(splitElements['Event']);
     let getCommon = commonGetterFactory(splitElements['Common'], splitElements['EC']);
@@ -144,9 +158,6 @@ function calculateGlobalDF(splitElements) {
     for (let i = 0; i < sortedEvents.length - 1; i++) {
         let source = sortedEvents[i];
         let target = sortedEvents[i+1];
-        if (source.data.id === 1541) {
-            console.log(target)
-        }
         let df = getDF(source.data.id, target.data.id);
 
         // We only add a DF edge if the following hold:
@@ -290,5 +301,36 @@ function eventSorter(events, dfs) {
         }
 
         return 0;
+    }
+}
+
+function removeEmptyCommons(elements) {
+    let splitEles = splitElements(elements);
+    let getEvent = eventGetterFactory(splitEles['Event']);
+    let getEventsFromCommon = eventsFromCommonGetterFactory(splitEles['EC'], getEvent);
+
+    let removedIds = []
+
+    for (let i = 0; i < elements.length; i++) {
+        if(elements.hasOwnProperty(i)) {
+            if (elements[i].data.DataType === 'Common') {
+                if (getEventsFromCommon(elements[i].data.id).length === 1) {
+                    removedIds.push(elements[i].data.id);
+                    elements.splice(i, 1);
+                    i--;
+                }
+            }
+        }
+    }
+
+    for (let i = 0; i < elements.length; i++) {
+        if(elements.hasOwnProperty(i)) {
+            if (elements[i].data.DataType === 'EC') {
+                if (removedIds.find((e)=> { return e === elements[i].data.target })) {
+                    elements.splice(i, 1);
+                    i--;
+                }
+            }
+        }
     }
 }
