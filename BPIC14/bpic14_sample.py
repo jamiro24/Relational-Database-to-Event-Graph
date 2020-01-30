@@ -9,12 +9,14 @@ import pandas as pd
 # Takes all interactions with interaction id in the list of incident activities
 # Takes all changes with CI in the list of CIs in incident aff, cby and interaction aff
 
+input_name = "bpic14"
+output_suffix = "sample"
 
-if os.path.exists("bpic14.sample_2.db"):
-    os.remove("bpic14.sample_2.db")
+if os.path.exists(f"{input_name}.{output_suffix}.db"):
+    os.remove(f"{input_name}.{output_suffix}.db")
 
-input_conn = sql.connect("bpic14.db")
-output_conn = sql.connect("bpic14.sample_2.db")
+input_conn = sql.connect(f"{input_name}.db")
+output_conn = sql.connect(f"{input_name}.{output_suffix}.db")
 
 config = {
     "start_time": "2013-01-01",

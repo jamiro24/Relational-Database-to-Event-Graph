@@ -1,7 +1,6 @@
 import pandas as pd
 import os
 import sqlite3 as sql
-import datetime
 import db_funcs
 
 # Read data from csv

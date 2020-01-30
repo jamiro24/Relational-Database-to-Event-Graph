@@ -22,11 +22,21 @@ def pivot_conf_items(configuration_items: List[List[str]]):
     return pivoted
 
 
-input_path = "bpic14.sample_2.db"
-output_path = "bpic14.sample_2_transformed_v2.db"
+input_name = "bpic14"
+output_suffix = "normalized"
+
+input_path = f"{input_name}.db"
+output_path = f"{input_name}.{output_suffix}.db"
 
 if os.path.exists(output_path):
-    os.remove(output_path)
+    answer = ""
+    while answer not in ["y", "n"]:
+        answer = input(f"This will delete {output_path}. Is this okay [Y/N]? ").lower()
+    if answer == "y":
+        os.remove(output_path)
+    else:
+        exit(1)
+
 
 input_conn = sql.connect(input_path)
 output_conn = sql.connect(output_path)
@@ -59,18 +69,22 @@ df_configuration_items = pd.DataFrame({
     "Subtype": pivoted_configuration_items[3]
 })
 df_configuration_items["ID"] = df_configuration_items.index
+df_configuration_items["ID"].astype('Int64')
 del pivoted_configuration_items
 
 db_funcs.create_db(output_conn)
 
 df_service_components.to_sql('Service_Component', con=output_conn, if_exists='append', index=False)
+print('wrote service components')
 df_configuration_items.to_sql('Configuration_Item', con=output_conn, if_exists='append', index=False)
+print('wrote configuration items')
 
 df_incident_act = pd.read_sql_query(sql="SELECT * FROM Incident_Activity", con=input_conn)
 
 df_assignment_group = pd.DataFrame()
 df_assignment_group['ID'] = df_incident_act['Assignment_Group'].drop_duplicates()
 df_assignment_group.to_sql('Assignment_Group', con=output_conn, if_exists='append', index=False)
+print('wrote assignment groups')
 
 df_interaction = pd.read_sql_query(sql="SELECT * FROM Interaction", con=input_conn)
 df_incident = pd.read_sql_query(sql="SELECT * FROM Incident", con=input_conn)
@@ -81,16 +95,21 @@ df_knowledge_document['ID'] = df_incident_act['KM_number']\
     .append(df_interaction['KM_number'])\
     .drop_duplicates()
 df_knowledge_document.to_sql('Knowledge_Document', con=output_conn, if_exists='append', index=False)
+print('wrote knowledge documents')
 
 
 def find_ci_id(row, a_name, a_type, a_subtype, a_sc):
-    row: pd.DataFrame = df_configuration_items.loc[
+
+    ci_row: pd.DataFrame = df_configuration_items.loc[
         (df_configuration_items['Name'] == row[a_name]) &
         (df_configuration_items['Type'] == row[a_type]) &
         (df_configuration_items['Subtype'] == row[a_subtype]) &
         (df_configuration_items['Service_Component'] == row[a_sc])]
 
-    return row['ID'].iloc[0]
+    if ci_row.empty:
+        return pd.np.NaN
+
+    return ci_row['ID'].iloc[0]
 
 
 # Transform change table
@@ -100,6 +119,7 @@ del df_change['CI_Subtype_aff']
 del df_change['CI_Name_aff']
 del df_change["CI_Type_aff"]
 df_change.to_sql('Change', con=output_conn, if_exists='append', index=False)
+print('wrote changes')
 
 # Transform interaction table
 df_interaction["CI_ID_aff"] = df_interaction.apply(lambda row: find_ci_id(row, 'CI_Name_aff', 'CI_Type_aff', 'CI_Subtype_aff', 'Service_Comp_WBS_aff'), axis=1)
@@ -107,10 +127,13 @@ del df_interaction['CI_Subtype_aff']
 del df_interaction['CI_Name_aff']
 del df_interaction["CI_Type_aff"]
 df_interaction.to_sql('Interaction', con=output_conn, if_exists='append', index=False)
+print('wrote interactions')
 
 # Transform Incident table
 df_incident["CI_ID_aff"] = df_incident.apply(lambda row: find_ci_id(row, 'CI_Name_aff', 'CI_Type_aff', 'CI_Subtype_aff', 'Service_Component_WBS_aff'), axis=1)
 df_incident["CI_ID_CBy"] = df_incident.apply(lambda row: find_ci_id(row, 'CI_Name_CBy', 'CI_Type_CBy', 'CI_Subtype_CBy', 'ServiceComp_WBS_CBy'), axis=1)
+df_incident["CI_ID_aff"] = df_incident["CI_ID_aff"].astype(pd.Int64Dtype())
+df_incident["CI_ID_CBy"] = df_incident["CI_ID_CBy"].astype(pd.Int64Dtype())
 del df_incident['CI_Subtype_aff']
 del df_incident['CI_Subtype_CBy']
 del df_incident['CI_Name_aff']
@@ -118,5 +141,7 @@ del df_incident["CI_Type_aff"]
 del df_incident['CI_Name_CBy']
 del df_incident["CI_Type_CBy"]
 df_incident.to_sql('Incident', con=output_conn, if_exists='append', index=False)
+print('wrote incidents')
 
 df_incident_act.to_sql('Incident_Activity', con=output_conn, if_exists='append', index=False)
+print('wrote incident activities')
