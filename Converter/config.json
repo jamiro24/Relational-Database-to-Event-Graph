@@ -1,0 +1,15 @@
+{
+  "connection": {
+    "neo4j": {
+      "jdbc": "bolt://127.0.0.1:11006",
+      "user": "neo4j",
+      "password": "1234"
+    },
+    "sql": {
+
+    }
+  },
+  "entity": [
+
+  ]
+}
