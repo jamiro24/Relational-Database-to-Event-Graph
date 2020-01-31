@@ -1,7 +1,6 @@
 from log.singleton import Singleton
 import logging
 import sys
-import threading
 
 ERROR = logging.ERROR
 WARNING = logging.WARNING

@@ -1,7 +1,8 @@
 import threading
 
 
-# https://gist.github.com/tkhoa2711/7ce18809febbca4828db
+# from https://gist.github.com/tkhoa2711/7ce18809febbca4828db
+#
 # A thread-safe implementation of Singleton pattern
 # To be used as mixin or base class
 class Singleton(object):

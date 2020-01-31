@@ -1,15 +1,131 @@
 {
   "connection": {
     "neo4j": {
-      "jdbc": "bolt://127.0.0.1:11006",
+      "jdbc": "bolt://127.0.0.1:11002",
       "user": "neo4j",
       "password": "1234"
-    },
-    "sql": {
-
     }
   },
+  "log": {
+    "name": "BPI14"
+  },
   "entity": [
-
+    {
+      "label": "Assignment_Group",
+      "id_column": "ID"
+    },
+    {
+      "label": "Knowledge_Document",
+      "id_column": "ID"
+    },
+    {
+      "label": "Configuration_Item",
+      "id_column": "Name"
+    },
+    {
+      "label": "Incident_Activity",
+      "id_column": "IncidentActivity_Number",
+      "event": {
+        "related_entities": ["Knowledge_Document", "Assignment_Group", "Incident", "Interaction"],
+        "create_from": [
+          {
+            "start_column": "DateStamp",
+            "end_column": "DateStamp",
+            "activity": "Incident_Activity_{IncidentActivity_Type}"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Change",
+      "id_column": "Change_ID",
+      "event": {
+        "related_entities": ["Service_Component", "Configuration_Item"],
+        "create_from": [
+          {
+            "start_column": "Actual_Start",
+            "activity": "Change_Actual_Start"
+          },
+          {
+            "start_column": "Actual_End",
+            "activity": "Change_Actual_End"
+          },
+          {
+            "start_column": "Planned_Start",
+            "activity": "Change_Planned_Start"
+          },
+          {
+            "start_column": "Planned_End",
+            "activity": "Change_Planned_End"
+          },
+          {
+            "start_column": "Scheduled_Downtime_Start",
+            "activity": "Change_Scheduled_Downtime_Start"
+          },
+          {
+            "start_column": "Scheduled_Downtime_End",
+            "activity": "Change_Scheduled_Downtime_End"
+          },
+          {
+            "start_column": "Requested_End_Date",
+            "activity": "Change_Requested_End_Date"
+          },
+          {
+            "start_column": "Change_record_Open_Time",
+            "activity": "Change_record_Open_Time"
+          },
+          {
+            "start_column": "Change_record_Close_Time",
+            "activity": "Change_record_Close_Time"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Incident",
+      "id_column": "Incident_ID",
+      "event": {
+        "related_entities": ["Service_Component", "Configuration_Item", "Knowledge_Document"],
+        "create_from": [
+          {
+            "start_column": "Open_Time",
+            "activity": "Incident_Open_Time"
+          },
+          {
+            "start_column": "Reopen_Time",
+            "activity": "Incident_Reopen_Time"
+          },
+          {
+            "start_column": "Resolved_Time",
+            "activity": "Incident_Resolved_Time"
+          },
+          {
+            "start_column": "Close_Time",
+            "activity": "Incident_Close_Time"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Service_Component",
+      "id_column": "ID"
+    },
+    {
+      "label": "Interaction",
+      "id_column": "Interaction_ID",
+      "event": {
+        "related_entities": ["Service_Component", "Configuration_Item", "Knowledge_Document"],
+         "create_from": [
+         {
+           "start_column": "Open_Time_First_Touch",
+           "activity": "Interaction_Open_Time_First_Touch"
+         },
+         {
+           "start_column": "Close_Time",
+           "activity": "Interaction_Close_Time"
+         }
+        ]
+      }
+    }
   ]
 }
