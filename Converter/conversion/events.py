@@ -15,7 +15,7 @@ def create(neo4j: Neo4JConnection, config: Config):
         # Not all entity types result in events
         if 'event' in entity_config:
             event_config = entity_config['event']
-            __create_temp_events(neo4j, event_config, entity_config, entities_config, True)
+            __create_temp_events(neo4j, event_config, entity_config, entities_config)
 
             for create_from in event_config['create_from']:
                 __create_events(neo4j, create_from, entity_config)
@@ -24,7 +24,7 @@ def create(neo4j: Neo4JConnection, config: Config):
     # Create events from sources that are non-entity
     for non_entity_config in non_entities_config:
         event_config = non_entity_config['event']
-        __create_temp_events(neo4j, event_config, non_entity_config, entities_config, False)
+        __create_temp_events(neo4j, event_config, non_entity_config, entities_config)
 
         for create_from in event_config['create_from']:
             __create_events(neo4j, create_from, non_entity_config)
@@ -92,14 +92,12 @@ def __create_events(neo4j: Neo4JConnection, create_from: dict, entity_config: di
     """, f'Creating event nodes for {entity_label}.{start_column}')
 
 
-def __create_temp_events(neo4j: Neo4JConnection, event_config, entity_config: dict, entities_config: dict,
-                         to_self: bool):
+def __create_temp_events(neo4j: Neo4JConnection, event_config, entity_config: dict, entities_config: dict):
     entity_label = entity_config['label']  # label of the current entity
     related_entities = event_config['related_entities']  # list of entities that should relate to these events
 
-    if to_self:
-        # Create temp event nodes for the target entity type
-        neo4j.query(__create_temp_events_query(entity_label, entity_config, entities_config)
+    # Create temp event nodes for the target entity type
+    neo4j.query(__create_temp_events_query(entity_label, entity_config, entities_config)
                     , f'Creating temp events for {entity_label} entities')
 
     # Create temp event nodes for the entities related to the target entity type
