@@ -1,7 +1,7 @@
 {
   "connection": {
     "neo4j": {
-      "jdbc": "bolt://127.0.0.1:11002",
+      "jdbc": "bolt://127.0.0.1:7687",
       "user": "neo4j",
       "password": "1234"
     }
@@ -14,16 +14,58 @@
       "label": "Change_Activity",
       "id_column": "ID",
       "event": {
-        "related_entities": ["Change"],
-        "create_from": {
-          "start_column":"",
-          "end_column": "",
-          "activity": ""
-        }
+        "related_entities": ["Service_Component", "Configuration_Item"],
+        "create_from": [
+          {
+            "start_column": "Actual_Start",
+            "activity": "Change_Actual_Start"
+          },
+          {
+            "start_column": "Actual_End",
+            "activity": "Change_Actual_End"
+          },
+          {
+            "start_column": "Planned_Start",
+            "activity": "Change_Planned_Start"
+          },
+          {
+            "start_column": "Planned_End",
+            "activity": "Change_Planned_End"
+          },
+          {
+            "start_column": "Requested_End_Date",
+            "activity": "Change_Requested_End_Date"
+          },
+          {
+            "start_column": "Change_record_Open_Time",
+            "activity": "Change_record_Open_Time"
+          },
+          {
+            "start_column": "Change_record_Close_Time",
+            "activity": "Change_record_Close_Time"
+          }
+        ]
       }
     }
   ],
   "entity": [
+    {
+      "label": "Change",
+      "id_column": "ID",
+      "event": {
+        "related_entities": ["-Change_Activity:Service_Component", "-Change_Activity:Configuration_Item"],
+        "create_from": [
+          {
+            "start_column": "Scheduled_Downtime_Start",
+            "activity": "Change_Scheduled_Downtime_Start"
+          },
+          {
+            "start_column": "Scheduled_Downtime_End",
+            "activity": "Change_Scheduled_Downtime_End"
+          }
+        ]
+      }
+    },
     {
       "label": "Assignment_Group",
       "id_column": "ID"
@@ -46,51 +88,6 @@
             "start_column": "DateStamp",
             "end_column": "DateStamp",
             "activity": "Incident_Activity_{IncidentActivity_Type}"
-          }
-        ]
-      }
-    },
-    {
-      "label": "Change",
-      "id_column": "Change_ID",
-      "event": {
-        "related_entities": ["Service_Component", "Configuration_Item"],
-        "create_from": [
-          {
-            "start_column": "Actual_Start",
-            "activity": "Change_Actual_Start"
-          },
-          {
-            "start_column": "Actual_End",
-            "activity": "Change_Actual_End"
-          },
-          {
-            "start_column": "Planned_Start",
-            "activity": "Change_Planned_Start"
-          },
-          {
-            "start_column": "Planned_End",
-            "activity": "Change_Planned_End"
-          },
-          {
-            "start_column": "Scheduled_Downtime_Start",
-            "activity": "Change_Scheduled_Downtime_Start"
-          },
-          {
-            "start_column": "Scheduled_Downtime_End",
-            "activity": "Change_Scheduled_Downtime_End"
-          },
-          {
-            "start_column": "Requested_End_Date",
-            "activity": "Change_Requested_End_Date"
-          },
-          {
-            "start_column": "Change_record_Open_Time",
-            "activity": "Change_record_Open_Time"
-          },
-          {
-            "start_column": "Change_record_Close_Time",
-            "activity": "Change_record_Close_Time"
           }
         ]
       }

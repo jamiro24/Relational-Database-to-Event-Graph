@@ -89,10 +89,11 @@ def __create_events(neo4j: Neo4JConnection, create_from: dict, entity_config: di
         CREATE (event)-[ec:E_C {{entityType: event.entityType}}]->(co)
         
         return event, co, ec
-    """, f'Creating Event nodes for {entity_label}.{start_column}')
+    """, f'Creating event nodes for {entity_label}.{start_column}')
 
 
-def __create_temp_events(neo4j: Neo4JConnection, event_config, entity_config: dict, entities_config: dict, to_self: bool):
+def __create_temp_events(neo4j: Neo4JConnection, event_config, entity_config: dict, entities_config: dict,
+                         to_self: bool):
     entity_label = entity_config['label']  # label of the current entity
     related_entities = event_config['related_entities']  # list of entities that should relate to these events
 
@@ -108,15 +109,31 @@ def __create_temp_events(neo4j: Neo4JConnection, event_config, entity_config: di
 
 
 # Returns query to create temp event nodes
-def __create_temp_events_query(entity_label: str, entity_config: dict, entities_config: dict, related: str = None) -> str:
-
+def __create_temp_events_query(entity_label: str, entity_config: dict, entities_config: dict,
+                               related: str = None) -> str:
     match = f'MATCH (common:{entity_label})'  # matcher to find desired node with label `entity_label`
     related_config = entity_config  # config for related entity (equals current entity config if `related == None`
     related_matcher = 'common'  # matcher used for related nodes (equals 'common' if `related == None`
 
     if related is not None:
-        match += f'-[]->(related:{related})'  # finds related nodes in the graph
-        related_config = next(x for x in entities_config if x['label'] == related)
+        related_labels = related.split(':')
+        related_config = None
+
+        for i in range(len(related_labels)):
+            direction = '-->'
+            related_label = related_labels[i]
+            if related_label.startswith('-'):
+                related_label = related_label[1:]
+                direction = '<--'
+            elif related_label.startswith('+'):
+                related_label = related_label[1:]
+
+            if (i + 1) == len(related_labels):
+                match += f'{direction}(related:{related_label})'
+                related_config = next(x for x in entities_config if x['label'] == related_label)
+            else:
+                match += f'{direction}(:{related_label})'
+
         related_matcher = 'related'
 
     related_id_column = related_config['id_column']  # id column of related entity type
