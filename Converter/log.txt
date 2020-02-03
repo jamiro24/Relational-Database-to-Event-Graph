@@ -1,0 +1,821 @@
+2020-02-03 12:30:53 INFO     Executing query: Cleaning up `Entity` nodes and their relationships
+2020-02-03 12:30:53 DEBUG    
+                MATCH (n:Entity)
+                OPTIONAL MATCH (n)-[r]-()
+                DELETE n,r
+            
+2020-02-03 12:30:54 INFO     Executing query: Cleaning up `Event` nodes and their relationships
+2020-02-03 12:30:54 DEBUG    
+                MATCH (n:Event)
+                OPTIONAL MATCH (n)-[r]-()
+                DELETE n,r
+            
+2020-02-03 12:30:58 INFO     Executing query: Cleaning up `Log` nodes and their relationships
+2020-02-03 12:30:58 DEBUG    
+                MATCH (n:Log)
+                OPTIONAL MATCH (n)-[r]-()
+                DELETE n,r
+            
+2020-02-03 12:30:58 INFO     Executing query: Cleaning up `Common` nodes and their relationships
+2020-02-03 12:30:58 DEBUG    
+                MATCH (n:Common)
+                OPTIONAL MATCH (n)-[r]-()
+                DELETE n,r
+            
+2020-02-03 12:30:58 INFO     Executing query: Cleaning up `TempEvent` nodes and their relationships
+2020-02-03 12:30:58 DEBUG    
+                MATCH (n:TempEvent)
+                OPTIONAL MATCH (n)-[r]-()
+                DELETE n,r
+            
+2020-02-03 12:30:58 INFO     Executing query: Creating index on :Entity(EntityType)
+2020-02-03 12:30:58 DEBUG    CREATE INDEX ON :Entity(EntityType)
+2020-02-03 12:30:58 INFO     Executing query: Creating index on :Event(start)
+2020-02-03 12:30:58 DEBUG    CREATE INDEX ON :Event(start)
+2020-02-03 12:30:58 INFO     Executing query: Creating index on :TempEvent(originID)
+2020-02-03 12:30:58 DEBUG    CREATE INDEX ON :TempEvent(originID)
+2020-02-03 12:30:58 INFO     Executing query: Creating entity nodes with EntityType:Change
+2020-02-03 12:30:58 DEBUG    
+            MATCH (n:Change)
+            WITH DISTINCT n.ID as id
+            CALL apoc.create.node(
+                ['Entity'], 
+                {
+                    EntityType:'Change', 
+                    ID:'BPI14'+id, 
+                    IDraw:id, Log:'BPI14', 
+                    uID:'ChangeBPI14'+id
+                }) yield node
+            RETURN node
+        
+2020-02-03 12:30:58 INFO     Executing query: Creating entity nodes with EntityType:Assignment_Group
+2020-02-03 12:30:58 DEBUG    
+            MATCH (n:Assignment_Group)
+            WITH DISTINCT n.ID as id
+            CALL apoc.create.node(
+                ['Entity'], 
+                {
+                    EntityType:'Assignment_Group', 
+                    ID:'BPI14'+id, 
+                    IDraw:id, Log:'BPI14', 
+                    uID:'Assignment_GroupBPI14'+id
+                }) yield node
+            RETURN node
+        
+2020-02-03 12:30:58 INFO     Executing query: Creating entity nodes with EntityType:Knowledge_Document
+2020-02-03 12:30:58 DEBUG    
+            MATCH (n:Knowledge_Document)
+            WITH DISTINCT n.ID as id
+            CALL apoc.create.node(
+                ['Entity'], 
+                {
+                    EntityType:'Knowledge_Document', 
+                    ID:'BPI14'+id, 
+                    IDraw:id, Log:'BPI14', 
+                    uID:'Knowledge_DocumentBPI14'+id
+                }) yield node
+            RETURN node
+        
+2020-02-03 12:30:58 INFO     Executing query: Creating entity nodes with EntityType:Configuration_Item
+2020-02-03 12:30:58 DEBUG    
+            MATCH (n:Configuration_Item)
+            WITH DISTINCT n.Name as id
+            CALL apoc.create.node(
+                ['Entity'], 
+                {
+                    EntityType:'Configuration_Item', 
+                    ID:'BPI14'+id, 
+                    IDraw:id, Log:'BPI14', 
+                    uID:'Configuration_ItemBPI14'+id
+                }) yield node
+            RETURN node
+        
+2020-02-03 12:30:58 INFO     Executing query: Creating entity nodes with EntityType:Incident_Activity
+2020-02-03 12:30:58 DEBUG    
+            MATCH (n:Incident_Activity)
+            WITH DISTINCT n.IncidentActivity_Number as id
+            CALL apoc.create.node(
+                ['Entity'], 
+                {
+                    EntityType:'Incident_Activity', 
+                    ID:'BPI14'+id, 
+                    IDraw:id, Log:'BPI14', 
+                    uID:'Incident_ActivityBPI14'+id
+                }) yield node
+            RETURN node
+        
+2020-02-03 12:30:59 INFO     Executing query: Creating entity nodes with EntityType:Incident
+2020-02-03 12:30:59 DEBUG    
+            MATCH (n:Incident)
+            WITH DISTINCT n.Incident_ID as id
+            CALL apoc.create.node(
+                ['Entity'], 
+                {
+                    EntityType:'Incident', 
+                    ID:'BPI14'+id, 
+                    IDraw:id, Log:'BPI14', 
+                    uID:'IncidentBPI14'+id
+                }) yield node
+            RETURN node
+        
+2020-02-03 12:30:59 INFO     Executing query: Creating entity nodes with EntityType:Service_Component
+2020-02-03 12:30:59 DEBUG    
+            MATCH (n:Service_Component)
+            WITH DISTINCT n.ID as id
+            CALL apoc.create.node(
+                ['Entity'], 
+                {
+                    EntityType:'Service_Component', 
+                    ID:'BPI14'+id, 
+                    IDraw:id, Log:'BPI14', 
+                    uID:'Service_ComponentBPI14'+id
+                }) yield node
+            RETURN node
+        
+2020-02-03 12:30:59 INFO     Executing query: Creating entity nodes with EntityType:Interaction
+2020-02-03 12:30:59 DEBUG    
+            MATCH (n:Interaction)
+            WITH DISTINCT n.Interaction_ID as id
+            CALL apoc.create.node(
+                ['Entity'], 
+                {
+                    EntityType:'Interaction', 
+                    ID:'BPI14'+id, 
+                    IDraw:id, Log:'BPI14', 
+                    uID:'InteractionBPI14'+id
+                }) yield node
+            RETURN node
+        
+2020-02-03 12:30:59 INFO     Executing query: Creating temp events for Change entities
+2020-02-03 12:30:59 DEBUG    
+            MATCH (common:Change)
+            MERGE (n:TempEvent {originID: ID(common), commonID: ID(common)})
+            ON CREATE SET n+=common
+            ON CREATE SET n.EntityType="Change"
+            ON CREATE SET n.IDraw=common.ID
+            
+2020-02-03 12:30:59 INFO     Executing query: Creating temp events for -Change_Activity:Service_Component entities related to Change
+2020-02-03 12:30:59 DEBUG    
+            MATCH (common:Change)<--(:Change_Activity)-->(related:Service_Component)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Service_Component"
+            ON CREATE SET n.IDraw=related.ID
+            
+2020-02-03 12:30:59 INFO     Executing query: Creating temp events for -Change_Activity:Configuration_Item entities related to Change
+2020-02-03 12:30:59 DEBUG    
+            MATCH (common:Change)<--(:Change_Activity)-->(related:Configuration_Item)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Configuration_Item"
+            ON CREATE SET n.IDraw=related.Name
+            
+2020-02-03 12:30:59 INFO     Executing query: Creating event nodes for Change.Scheduled_Downtime_Start
+2020-02-03 12:30:59 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Change'})
+        WHERE 'Scheduled_Downtime_Start' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Change_Scheduled_Downtime_Start'
+        SET event.Start = ent.Scheduled_Downtime_Start
+        SET event.End = ent.Scheduled_Downtime_Start
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:00 INFO     Executing query: Creating event nodes for Change.Scheduled_Downtime_End
+2020-02-03 12:31:00 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Change'})
+        WHERE 'Scheduled_Downtime_End' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Change_Scheduled_Downtime_End'
+        SET event.Start = ent.Scheduled_Downtime_End
+        SET event.End = ent.Scheduled_Downtime_End
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:00 INFO     Executing query: Cleaning up temp nodes
+2020-02-03 12:31:00 DEBUG    
+        MATCH (e:TempEvent)
+        DELETE e
+        
+2020-02-03 12:31:00 INFO     Executing query: Creating temp events for Incident_Activity entities
+2020-02-03 12:31:00 DEBUG    
+            MATCH (common:Incident_Activity)
+            MERGE (n:TempEvent {originID: ID(common), commonID: ID(common)})
+            ON CREATE SET n+=common
+            ON CREATE SET n.EntityType="Incident_Activity"
+            ON CREATE SET n.IDraw=common.IncidentActivity_Number
+            
+2020-02-03 12:31:00 INFO     Executing query: Creating temp events for Knowledge_Document entities related to Incident_Activity
+2020-02-03 12:31:00 DEBUG    
+            MATCH (common:Incident_Activity)-->(related:Knowledge_Document)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Knowledge_Document"
+            ON CREATE SET n.IDraw=related.ID
+            
+2020-02-03 12:31:19 INFO     Executing query: Creating temp events for Assignment_Group entities related to Incident_Activity
+2020-02-03 12:31:19 DEBUG    
+            MATCH (common:Incident_Activity)-->(related:Assignment_Group)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Assignment_Group"
+            ON CREATE SET n.IDraw=related.ID
+            
+2020-02-03 12:31:26 INFO     Executing query: Creating temp events for Incident entities related to Incident_Activity
+2020-02-03 12:31:26 DEBUG    
+            MATCH (common:Incident_Activity)-->(related:Incident)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Incident"
+            ON CREATE SET n.IDraw=related.Incident_ID
+            
+2020-02-03 12:31:27 INFO     Executing query: Creating temp events for Interaction entities related to Incident_Activity
+2020-02-03 12:31:27 DEBUG    
+            MATCH (common:Incident_Activity)-->(related:Interaction)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Interaction"
+            ON CREATE SET n.IDraw=related.Interaction_ID
+            
+2020-02-03 12:31:28 INFO     Executing query: Creating event nodes for Incident_Activity.DateStamp
+2020-02-03 12:31:28 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Incident_Activity'})
+        WHERE 'DateStamp' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Incident_Activity_'+ent.IncidentActivity_Type
+        SET event.Start = ent.DateStamp
+        SET event.End = ent.DateStamp
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:46 INFO     Executing query: Cleaning up temp nodes
+2020-02-03 12:31:46 DEBUG    
+        MATCH (e:TempEvent)
+        DELETE e
+        
+2020-02-03 12:31:48 INFO     Executing query: Creating temp events for Incident entities
+2020-02-03 12:31:48 DEBUG    
+            MATCH (common:Incident)
+            MERGE (n:TempEvent {originID: ID(common), commonID: ID(common)})
+            ON CREATE SET n+=common
+            ON CREATE SET n.EntityType="Incident"
+            ON CREATE SET n.IDraw=common.Incident_ID
+            
+2020-02-03 12:31:48 INFO     Executing query: Creating temp events for Service_Component entities related to Incident
+2020-02-03 12:31:48 DEBUG    
+            MATCH (common:Incident)-->(related:Service_Component)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Service_Component"
+            ON CREATE SET n.IDraw=related.ID
+            
+2020-02-03 12:31:48 INFO     Executing query: Creating temp events for Configuration_Item entities related to Incident
+2020-02-03 12:31:48 DEBUG    
+            MATCH (common:Incident)-->(related:Configuration_Item)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Configuration_Item"
+            ON CREATE SET n.IDraw=related.Name
+            
+2020-02-03 12:31:48 INFO     Executing query: Creating temp events for Knowledge_Document entities related to Incident
+2020-02-03 12:31:48 DEBUG    
+            MATCH (common:Incident)-->(related:Knowledge_Document)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Knowledge_Document"
+            ON CREATE SET n.IDraw=related.ID
+            
+2020-02-03 12:31:48 INFO     Executing query: Creating event nodes for Incident.Open_Time
+2020-02-03 12:31:48 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Incident'})
+        WHERE 'Open_Time' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Incident_Open_Time'
+        SET event.Start = ent.Open_Time
+        SET event.End = ent.Open_Time
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:49 INFO     Executing query: Creating event nodes for Incident.Reopen_Time
+2020-02-03 12:31:49 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Incident'})
+        WHERE 'Reopen_Time' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Incident_Reopen_Time'
+        SET event.Start = ent.Reopen_Time
+        SET event.End = ent.Reopen_Time
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:49 INFO     Executing query: Creating event nodes for Incident.Resolved_Time
+2020-02-03 12:31:49 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Incident'})
+        WHERE 'Resolved_Time' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Incident_Resolved_Time'
+        SET event.Start = ent.Resolved_Time
+        SET event.End = ent.Resolved_Time
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:49 INFO     Executing query: Creating event nodes for Incident.Close_Time
+2020-02-03 12:31:49 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Incident'})
+        WHERE 'Close_Time' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Incident_Close_Time'
+        SET event.Start = ent.Close_Time
+        SET event.End = ent.Close_Time
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:51 INFO     Executing query: Cleaning up temp nodes
+2020-02-03 12:31:51 DEBUG    
+        MATCH (e:TempEvent)
+        DELETE e
+        
+2020-02-03 12:31:51 INFO     Executing query: Creating temp events for Interaction entities
+2020-02-03 12:31:51 DEBUG    
+            MATCH (common:Interaction)
+            MERGE (n:TempEvent {originID: ID(common), commonID: ID(common)})
+            ON CREATE SET n+=common
+            ON CREATE SET n.EntityType="Interaction"
+            ON CREATE SET n.IDraw=common.Interaction_ID
+            
+2020-02-03 12:31:51 INFO     Executing query: Creating temp events for Service_Component entities related to Interaction
+2020-02-03 12:31:51 DEBUG    
+            MATCH (common:Interaction)-->(related:Service_Component)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Service_Component"
+            ON CREATE SET n.IDraw=related.ID
+            
+2020-02-03 12:31:51 INFO     Executing query: Creating temp events for Configuration_Item entities related to Interaction
+2020-02-03 12:31:51 DEBUG    
+            MATCH (common:Interaction)-->(related:Configuration_Item)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Configuration_Item"
+            ON CREATE SET n.IDraw=related.Name
+            
+2020-02-03 12:31:52 INFO     Executing query: Creating temp events for Knowledge_Document entities related to Interaction
+2020-02-03 12:31:52 DEBUG    
+            MATCH (common:Interaction)-->(related:Knowledge_Document)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Knowledge_Document"
+            ON CREATE SET n.IDraw=related.ID
+            
+2020-02-03 12:31:52 INFO     Executing query: Creating event nodes for Interaction.Open_Time_First_Touch
+2020-02-03 12:31:52 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Interaction'})
+        WHERE 'Open_Time_First_Touch' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Interaction_Open_Time_First_Touch'
+        SET event.Start = ent.Open_Time_First_Touch
+        SET event.End = ent.Open_Time_First_Touch
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:53 INFO     Executing query: Creating event nodes for Interaction.Close_Time
+2020-02-03 12:31:53 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Interaction'})
+        WHERE 'Close_Time' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Interaction_Close_Time'
+        SET event.Start = ent.Close_Time
+        SET event.End = ent.Close_Time
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:54 INFO     Executing query: Cleaning up temp nodes
+2020-02-03 12:31:54 DEBUG    
+        MATCH (e:TempEvent)
+        DELETE e
+        
+2020-02-03 12:31:54 INFO     Executing query: Creating temp events for Change_Activity entities
+2020-02-03 12:31:54 DEBUG    
+            MATCH (common:Change_Activity)
+            MERGE (n:TempEvent {originID: ID(common), commonID: ID(common)})
+            ON CREATE SET n+=common
+            ON CREATE SET n.EntityType="Change_Activity"
+            ON CREATE SET n.IDraw=common.ID
+            
+2020-02-03 12:31:54 INFO     Executing query: Creating temp events for Service_Component entities related to Change_Activity
+2020-02-03 12:31:54 DEBUG    
+            MATCH (common:Change_Activity)-->(related:Service_Component)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Service_Component"
+            ON CREATE SET n.IDraw=related.ID
+            
+2020-02-03 12:31:54 INFO     Executing query: Creating temp events for Configuration_Item entities related to Change_Activity
+2020-02-03 12:31:54 DEBUG    
+            MATCH (common:Change_Activity)-->(related:Configuration_Item)
+            MERGE (n:TempEvent {originID: ID(related), commonID: ID(common)})
+            ON CREATE SET n+=related
+            ON CREATE SET n.EntityType="Configuration_Item"
+            ON CREATE SET n.IDraw=related.Name
+            
+2020-02-03 12:31:54 INFO     Executing query: Creating event nodes for Change_Activity.Actual_Start
+2020-02-03 12:31:54 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Change_Activity'})
+        WHERE 'Actual_Start' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Change_Actual_Start'
+        SET event.Start = ent.Actual_Start
+        SET event.End = ent.Actual_Start
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:54 INFO     Executing query: Creating event nodes for Change_Activity.Actual_End
+2020-02-03 12:31:54 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Change_Activity'})
+        WHERE 'Actual_End' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Change_Actual_End'
+        SET event.Start = ent.Actual_End
+        SET event.End = ent.Actual_End
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:54 INFO     Executing query: Creating event nodes for Change_Activity.Planned_Start
+2020-02-03 12:31:54 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Change_Activity'})
+        WHERE 'Planned_Start' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Change_Planned_Start'
+        SET event.Start = ent.Planned_Start
+        SET event.End = ent.Planned_Start
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:55 INFO     Executing query: Creating event nodes for Change_Activity.Planned_End
+2020-02-03 12:31:55 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Change_Activity'})
+        WHERE 'Planned_End' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Change_Planned_End'
+        SET event.Start = ent.Planned_End
+        SET event.End = ent.Planned_End
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:55 INFO     Executing query: Creating event nodes for Change_Activity.Requested_End_Date
+2020-02-03 12:31:55 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Change_Activity'})
+        WHERE 'Requested_End_Date' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Change_Requested_End_Date'
+        SET event.Start = ent.Requested_End_Date
+        SET event.End = ent.Requested_End_Date
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:56 INFO     Executing query: Creating event nodes for Change_Activity.Change_record_Open_Time
+2020-02-03 12:31:56 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Change_Activity'})
+        WHERE 'Change_record_Open_Time' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Change_record_Open_Time'
+        SET event.Start = ent.Change_record_Open_Time
+        SET event.End = ent.Change_record_Open_Time
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:56 INFO     Executing query: Creating event nodes for Change_Activity.Change_record_Close_Time
+2020-02-03 12:31:56 DEBUG    
+        // Find Incident TempEvents that should generate this event
+        MATCH (ent:TempEvent {EntityType:'Change_Activity'})
+        WHERE 'Change_record_Close_Time' in keys(ent)
+        
+        // Find other matching TempEvent
+        MATCH (t:TempEvent {commonID: ent.commonID})
+        WITH ent, t
+        
+        CREATE (event:Event)
+        SET event = t
+        SET event.Activity = 'Change_record_Close_Time'
+        SET event.Start = ent.Change_record_Close_Time
+        SET event.End = ent.Change_record_Close_Time
+        
+        WITH ent, collect(event) as events
+        
+        CREATE (co:Common)
+        
+        WITH co, events
+        UNWIND events as event
+        WITH co, event
+        
+        // Create relations between events and common nodes
+        CREATE (event)-[ec:E_C {entityType: event.entityType}]->(co)
+        
+        return event, co, ec
+    
+2020-02-03 12:31:57 INFO     Executing query: Cleaning up temp nodes
+2020-02-03 12:31:57 DEBUG    
+        MATCH (e:TempEvent)
+        DELETE e
+        
+2020-02-03 12:31:57 INFO     Executing query: Creating E_EN relations
+2020-02-03 12:31:57 DEBUG    
+        MATCH (ev:Event)
+        MATCH (en:Entity {IDraw: ev.IDraw, EntityType:ev.EntityType})
+        CREATE (ev)-[r:E_EN]->(en)
+        SET r.EntityType = en.EntityType
+        return null
+    
+2020-02-03 12:31:58 INFO     Executing query: Creating DF relations
+2020-02-03 12:31:58 DEBUG    
+        MATCH (n:Entity)
+        MATCH (n)-[]-(ev)
+        
+        WITH n, ev as nodes ORDER BY ev.Start, ID(ev)
+        WITH n, collect(nodes) as nodeList
+        WITH n, apoc.coll.pairsMin(nodeList) as pairs
+        UNWIND pairs as pair
+        WITH n, pair[0] as first, pair[1] as second
+        
+        CREATE (first)-[df:DF]->(second)
+        SET df.EntityType = n.EntityType
+        SET df.EntityId = n.ID
+        RETURN null
+    
+2020-02-03 12:32:00 INFO     Executing query: Creating Log node with L_E relations
+2020-02-03 12:32:00 DEBUG    
+        CREATE (l:Log {ID: 'BPI14'})
+        WITH l
+        Match (e:Event)
+        CREATE (l)-[r:L_E]->(e)
+        RETURN *
+    
