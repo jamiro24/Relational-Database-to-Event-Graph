@@ -9,6 +9,20 @@
   "log": {
     "name": "BPI14"
   },
+  "non_entity": [
+    {
+      "label": "Change_Activity",
+      "id_column": "ID",
+      "event": {
+        "related_entities": ["Change"],
+        "create_from": {
+          "start_column":"",
+          "end_column": "",
+          "activity": ""
+        }
+      }
+    }
+  ],
   "entity": [
     {
       "label": "Assignment_Group",

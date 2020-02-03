@@ -1,0 +1,125 @@
+[
+  {
+    "selector": "node",
+    "style": {
+      "text-valign": "center",
+      "text-outline-width": "0.4px",
+      "text-outline-color": "#FFFFFF",
+      "font-size": "13px"
+    }
+  },
+  {
+    "selector": "edge",
+    "style": {
+      "width": 7,
+      "curve-style": "bezier",
+      "line-color": "#88ef41"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"both\"]",
+    "style": {
+      "line-color": "#602495",
+      "target-arrow-color": "#602495"
+    }
+  },
+  {
+    "selector": "edge[DataType= \"DF\"]",
+    "style": {
+      "target-arrow-shape": "triangle",
+      "target-arrow-color": "#88ef41"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"Mixed\"]",
+    "style": {
+      "line-style": "dashed",
+      "line-color": "#602495",
+      "target-arrow-shape": "triangle",
+      "target-arrow-color": "#602495"
+    }
+  },
+  {
+    "selector": "node[DataType = \"Common\"]",
+    "style": {
+      "background-color": "#f4dee2"
+    }
+  },
+  {
+    "selector": "node[DataType =\"Event\"]",
+    "style": {
+      "label": "data(Activity)"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"Incident\"]",
+    "style": {
+      "background-color": "#F47C7C"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"Mixed\"]",
+    "style": {
+      "background-color": "#602495"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"Interaction\"]",
+    "style": {
+      "background-color": "#77ca44"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"Interaction\"]",
+    "style": {
+      "line-color": "#77ca44",
+      "target-arrow-color": "#77ca44"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"Change\"]",
+    "style": {
+      "background-color": "#fcc203"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"Change\"]",
+    "style": {
+      "line-color": "#fcc203",
+      "target-arrow-color": "#fcc203"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"Incident\"]",
+    "style": {
+      "line-color": "#F47C7C",
+      "target-arrow-color": "#F47C7C"
+    }
+  },
+  {
+    "selector": "edge[DataType = \"EC\"]",
+    "style": {
+      "line-color": "#f4dee2",
+      "target-arrow-color": "#f4dee2"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"Configuration_Item\"]",
+    "style": {
+      "background-color": "#80A1D7"
+    }
+  },
+  {
+    "selector": "edge[EntityType = \"Configuration_Item\"]",
+    "style": {
+      "line-color": "#80A1D7",
+      "target-arrow-color": "#80A1D7"
+    }
+  },
+  {
+    "selector": "node[EntityType=\"both\"]",
+    "style": {
+      "background-color": "#602495"
+    }
+  }
+]

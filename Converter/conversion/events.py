@@ -8,23 +8,34 @@ log = Logger.instance()
 # Creates event nodes
 def create(neo4j: Neo4JConnection, config: Config):
     entities_config = config['entity']
+    non_entities_config = config['non_entity']
 
+    # Create events from sources that are entities
     for entity_config in entities_config:
         # Not all entity types result in events
         if 'event' in entity_config:
             event_config = entity_config['event']
-            __create_temp_events(neo4j, event_config, entity_config, entities_config)
+            __create_temp_events(neo4j, event_config, entity_config, entities_config, True)
 
             for create_from in event_config['create_from']:
-                __create_events(neo4j, create_from, entity_config, entities_config)
+                __create_events(neo4j, create_from, entity_config)
             __cleanup_temp(neo4j)
+
+    # Create events from sources that are non-entity
+    for non_entity_config in non_entities_config:
+        event_config = non_entity_config['event']
+        __create_temp_events(neo4j, event_config, non_entity_config, entities_config, False)
+
+        for create_from in event_config['create_from']:
+            __create_events(neo4j, create_from, non_entity_config)
+        __cleanup_temp(neo4j)
 
 
 def __cleanup_temp(neo4j: Neo4JConnection):
     neo4j.query("""
         MATCH (e:TempEvent)
         DELETE e
-        """, 'cleaning up temp nodes')
+        """, 'Cleaning up temp nodes')
 
 
 def __form_activity(activity_config: str) -> str:
@@ -40,7 +51,7 @@ def __form_activity(activity_config: str) -> str:
     return result
 
 
-def __create_events(neo4j: Neo4JConnection, create_from: dict, entity_config: dict, entities_config: dict):
+def __create_events(neo4j: Neo4JConnection, create_from: dict, entity_config: dict):
     entity_label = entity_config['label']  # label of the current entity
     start_column = create_from['start_column']
     end_column = start_column
@@ -81,13 +92,14 @@ def __create_events(neo4j: Neo4JConnection, create_from: dict, entity_config: di
     """, f'Creating Event nodes for {entity_label}.{start_column}')
 
 
-def __create_temp_events(neo4j: Neo4JConnection, event_config, entity_config: dict, entities_config: dict):
+def __create_temp_events(neo4j: Neo4JConnection, event_config, entity_config: dict, entities_config: dict, to_self: bool):
     entity_label = entity_config['label']  # label of the current entity
     related_entities = event_config['related_entities']  # list of entities that should relate to these events
 
-    # Create temp event nodes for the target entity type
-    neo4j.query(__create_temp_events_query(entity_label, entity_config, entities_config)
-                , f'Creating temp events for {entity_label} entities')
+    if to_self:
+        # Create temp event nodes for the target entity type
+        neo4j.query(__create_temp_events_query(entity_label, entity_config, entities_config)
+                    , f'Creating temp events for {entity_label} entities')
 
     # Create temp event nodes for the entities related to the target entity type
     for related_entity in related_entities:
