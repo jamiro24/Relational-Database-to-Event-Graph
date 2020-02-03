@@ -5,7 +5,9 @@ from config.config import Config
 log = Logger.instance()
 
 
-# Creates entity nodes
+# Creates entity # Creates event nodes
+# # @neo4j: A connection to a Neo4J database
+# # @config: Root configuration
 def create(neo4j: Neo4JConnection, config: Config):
     entities = config['entity']
     log_name = config['log']['name']

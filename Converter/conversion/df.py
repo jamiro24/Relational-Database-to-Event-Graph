@@ -1,6 +1,8 @@
 from database.neo4j_connection import Neo4JConnection
 
 
+# Creates directly follows relationships
+# @neo4j: A connection to a Neo4J database
 def create(neo4j: Neo4JConnection):
     neo4j.query("""
         MATCH (n:Entity)
