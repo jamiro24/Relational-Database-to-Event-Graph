@@ -1,0 +1,102 @@
+﻿[
+  {
+    "EC": [
+      {
+        "identity": 2181,
+        "start": 1048,
+        "end": 1050,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2178,
+        "start": 1045,
+        "end": 1050,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": {
+      "identity": 1050,
+      "labels": [
+        "Common"
+      ],
+      "properties": {}
+    }
+  },
+  {
+    "EC": [
+      {
+        "identity": 2168,
+        "start": 1015,
+        "end": 1039,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2167,
+        "start": 1014,
+        "end": 1039,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": {
+      "identity": 1039,
+      "labels": [
+        "Common"
+      ],
+      "properties": {}
+    }
+  },
+  {
+    "EC": [
+      {
+        "identity": 2176,
+        "start": 1043,
+        "end": 1049,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2175,
+        "start": 1042,
+        "end": 1049,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": {
+      "identity": 1049,
+      "labels": [
+        "Common"
+      ],
+      "properties": {}
+    }
+  },
+  {
+    "EC": [
+      {
+        "identity": 2173,
+        "start": 1038,
+        "end": 1040,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2170,
+        "start": 1035,
+        "end": 1040,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": {
+      "identity": 1040,
+      "labels": [
+        "Common"
+      ],
+      "properties": {}
+    }
+  }
+]

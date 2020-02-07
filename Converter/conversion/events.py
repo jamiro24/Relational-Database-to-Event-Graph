@@ -27,6 +27,7 @@ def create(neo4j: Neo4JConnection, config: Config):
     # Create events from sources that are non-entity
     for non_entity_config in non_entities_config:
         __create_temp_events(neo4j, non_entity_config, entities_config)
+        event_config = non_entity_config['event']
 
         # Clone template events for each set of columns that need to result in event nodes
         for create_from in event_config['create_from']:
@@ -37,8 +38,8 @@ def create(neo4j: Neo4JConnection, config: Config):
 # removes all template events from the database
 def __cleanup_temp(neo4j: Neo4JConnection):
     neo4j.query("""
-        MATCH (e:TempEvent)
-        DELETE e
+        MATCH (e:TempEvent)-[k:Source]->()
+        DELETE e, k
         """, 'Cleaning up temp nodes')
 
 
@@ -54,7 +55,7 @@ def __form_activity(activity_config: str) -> str:
     for item in lst[1:]:
         splt = item.split('}')
         first, second = splt[0], splt[1]
-        result += f'+ent.{first}'
+        result += f'+source.{first}'
         if second != '':
             result += f'+{second}'
     return result
@@ -76,20 +77,20 @@ def __create_events(neo4j: Neo4JConnection, create_from: dict, entity_config: di
 
     neo4j.query(f"""
         // Find Incident TempEvents that should generate this event
-        MATCH (ent:TempEvent {{EntityType:'{entity_label}'}})
-        WHERE '{start_column}' in keys(ent)
+        MATCH (temp:TempEvent {{EntityType:'{entity_label}'}})-->(source)
+        WHERE '{start_column}' in keys(source)
         
         // Find other matching TempEvent
-        MATCH (t:TempEvent {{commonID: ent.commonID}})
-        WITH ent, t
+        MATCH (t:TempEvent {{commonID: temp.commonID}})
+        WITH temp, source, t
         
         CREATE (event:Event)
         SET event = t
         SET event.Activity = {activity}
-        SET event.Start = ent.{start_column}
-        SET event.End = ent.{end_column}
+        SET event.Start = source.{start_column}
+        SET event.End = source.{end_column}
         
-        WITH ent, collect(event) as events
+        WITH temp, collect(event) as events
         
         CREATE (co:Common)
         
@@ -99,8 +100,6 @@ def __create_events(neo4j: Neo4JConnection, create_from: dict, entity_config: di
         
         // Create relations between events and common nodes
         CREATE (event)-[ec:E_C {{entityType: event.entityType}}]->(co)
-        
-        return event, co, ec
     """, f'Creating event nodes for {entity_label}.{start_column}')
 
 
@@ -160,7 +159,8 @@ def __create_temp_events_query(entity_config: dict, entities_config: dict,
     related_matcher = 'common'  # matcher used for related nodes (equals 'common' if `related == None`
 
     if related is not None:
-        related_matcher, related_label = __form_related_matcher(related)
+        related_match_extension, related_label = __form_related_matcher(related)
+        match += related_match_extension
         related_config = next(x for x in entities_config if x['label'] == related_label)
         related_matcher = 'related'
 
@@ -169,8 +169,8 @@ def __create_temp_events_query(entity_config: dict, entities_config: dict,
 
     return f"""
             {match}
-            MERGE (n:TempEvent {{originID: ID({related_matcher}), commonID: ID(common)}})
-            ON CREATE SET n+={related_matcher}
+            MERGE (n:TempEvent {{originID: ID({related_matcher}), commonID: ID(common)}})-[s:Source]->({related_matcher})
             ON CREATE SET n.EntityType="{related_label}"
             ON CREATE SET n.IDraw={related_matcher}.{related_id_column}
-            """
+            """  # ON CREATE SET n+={related_matcher}
+

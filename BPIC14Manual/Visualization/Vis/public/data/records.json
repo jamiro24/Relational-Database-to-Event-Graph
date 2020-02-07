@@ -1,0 +1,6861 @@
+﻿[
+  {
+    "ent": {
+      "identity": 1021,
+      "labels": [
+        "Entity"
+      ],
+      "properties": {
+        "EntityType": "Configuration_Item",
+        "IDraw": "HMD000002",
+        "uID": "Configuration_ItemBPI14HMD000002",
+        "ID": "BPI14HMD000002",
+        "Log": "BPI14"
+      }
+    },
+    "events": [
+      {
+        "identity": 709,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2012-06-01 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2012-06-01 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1033,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-09-25 13:42:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-09-25 13:42:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 704,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-31 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2013-12-31 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1305,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-31 15:04:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-10-31 15:04:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 780,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-07-16 10:53:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2013-07-16 10:53:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 938,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-11-11 11:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-11-11 11:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 760,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-10 12:35:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2013-10-10 12:35:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1454,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-18 16:15:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_End",
+          "End": "2013-12-18 16:15:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 976,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-03 11:52:54",
+          "IDraw": "HMD000002",
+          "Activity": "Incident_Open_Time",
+          "End": "2014-01-03 11:52:54",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 96,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-31 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2013-10-31 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 604,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-07 13:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-10-07 13:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 599,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-07 13:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-10-07 13:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 867,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-01 08:01:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-10-01 08:01:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 916,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-18 16:14:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-12-18 16:14:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 941,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-18 16:16:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-12-18 16:16:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 979,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-02-26 11:32:25",
+          "IDraw": "HMD000002",
+          "Activity": "Incident_Open_Time",
+          "End": "2014-02-26 11:32:25",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 195,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-07 09:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2013-10-07 09:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1280,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-09 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-10-09 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 165,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-11 07:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2013-12-11 07:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 266,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-02-28 12:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2014-02-28 12:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 650,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-29 12:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2014-01-29 12:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1370,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-18 16:13:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_End",
+          "End": "2013-12-18 16:13:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 631,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-16 09:02:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2013-10-16 09:02:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 251,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-31 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-10-31 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 158,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-23 08:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2013-10-23 08:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 428,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-31 17:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-10-31 17:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1310,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-09 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-10-09 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1048,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-03-31 16:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Interaction_Close_Time",
+          "End": "2014-03-31 16:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 287,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-03-26 12:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2014-03-26 12:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 655,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-10 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2014-01-10 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 999,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-03-31 15:59:37",
+          "IDraw": "HMD000002",
+          "Activity": "Incident_Close_Time",
+          "End": "2014-03-31 15:59:37",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 986,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-08 15:24:11",
+          "IDraw": "HMD000002",
+          "Activity": "Incident_Resolved_Time",
+          "End": "2014-01-08 15:24:11",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1029,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-04 08:07:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-12-04 08:07:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1394,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-31 15:05:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_End",
+          "End": "2013-10-31 15:05:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 787,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-04-16 08:13:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2013-04-16 08:13:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 870,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-23 12:54:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-10-23 12:54:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 996,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-08 15:24:21",
+          "IDraw": "HMD000002",
+          "Activity": "Incident_Close_Time",
+          "End": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 201,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2012-08-30 07:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2012-08-30 07:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 663,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-09-22 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2013-09-22 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 781,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-07-11 14:16:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2013-07-11 14:16:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 291,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-10 17:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2014-01-10 17:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1300,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-09-25 13:42:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-09-25 13:42:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1096,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-09 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-10-09 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 859,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-03-20 16:32:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2014-03-20 16:32:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 403,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-23 12:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-10-23 12:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 818,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2012-08-22 14:42:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2012-08-22 14:42:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 102,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-03-26 09:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2014-03-26 09:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 920,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-11-01 09:35:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-11-01 09:35:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1015,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-03 11:45:00",
+          "IDraw": "HMD000002",
+          "Activity": "Interaction_Open_Time_First_Touch",
+          "End": "2014-01-03 11:45:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 820,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2011-09-01 09:13:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2011-09-01 09:13:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1313,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-09 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-10-09 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 610,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-26 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-12-26 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1350,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-04 08:59:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_End",
+          "End": "2013-12-04 08:59:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1043,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-08 15:24:00",
+          "IDraw": "HMD000002",
+          "Activity": "Interaction_Close_Time",
+          "End": "2014-01-08 15:24:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 858,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-02-25 13:19:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2014-02-25 13:19:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 687,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-23 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2013-10-23 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1034,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-18 10:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-12-18 10:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 989,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-03-31 15:59:35",
+          "IDraw": "HMD000002",
+          "Activity": "Incident_Resolved_Time",
+          "End": "2014-03-31 15:59:35",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 659,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-09-25 17:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2013-09-25 17:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 178,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-31 12:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2013-10-31 12:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 773,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-07 16:17:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2014-01-07 16:17:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 101,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-02-28 08:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2014-02-28 08:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 852,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-13 07:32:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-12-13 07:32:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 249,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-04 12:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-12-04 12:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1442,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-09 16:47:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_End",
+          "End": "2013-10-09 16:47:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 401,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-25 13:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-10-25 13:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1526,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-08-10 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2013-08-10 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 108,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-10 07:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2014-01-10 07:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1038,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-02-26 11:28:00",
+          "IDraw": "HMD000002",
+          "Activity": "Interaction_Open_Time_First_Touch",
+          "End": "2014-02-26 11:28:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 199,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-07 09:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2013-10-07 09:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 853,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-09 11:05:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-10-09 11:05:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1297,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-04 08:07:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-12-04 08:07:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 651,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-03-26 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2014-03-26 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 643,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-31 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2013-10-31 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 777,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-07-16 11:08:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2013-07-16 11:08:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 95,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-04 08:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2013-12-04 08:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 238,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-11-16 17:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-11-16 17:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1301,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-18 10:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-12-18 10:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 707,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-31 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2013-12-31 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 157,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-09-06 07:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2013-09-06 07:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 871,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-25 13:10:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-10-25 13:10:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 386,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-09-25 13:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-09-25 13:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1091,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-31 15:04:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-10-31 15:04:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 642,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-04 13:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2013-12-04 13:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 754,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-11-29 12:07:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2013-11-29 12:07:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 684,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-07-31 00:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2013-07-31 00:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 935,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-21 09:24:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-10-21 09:24:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 755,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-08-07 16:29:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2013-08-07 16:29:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 406,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-11 12:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_End",
+          "End": "2013-12-11 12:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1364,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-09-25 13:42:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_End",
+          "End": "2013-09-25 13:42:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 784,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-06-03 10:36:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2013-06-03 10:36:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1334,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-18 14:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-12-18 14:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 815,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2012-08-22 14:42:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2012-08-22 14:42:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1418,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-10-09 16:47:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_End",
+          "End": "2013-10-09 16:47:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 743,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-09-17 09:02:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2013-09-17 09:02:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 1282,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-12-18 14:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Actual_Start",
+          "End": "2013-12-18 14:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 761,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-03-20 09:25:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Open_Time",
+          "End": "2014-03-20 09:25:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 841,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-11-12 12:06:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2013-11-12 12:06:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 863,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2014-01-13 08:24:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_record_Close_Time",
+          "End": "2014-01-13 08:24:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 662,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-09-25 17:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Requested_End_Date",
+          "End": "2013-09-25 17:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      },
+      {
+        "identity": 144,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "EntityType": "Configuration_Item",
+          "Type": "hardware",
+          "Start": "2013-09-25 07:00:00",
+          "IDraw": "HMD000002",
+          "Activity": "Change_Planned_Start",
+          "End": "2013-09-25 07:00:00",
+          "ID": "0",
+          "Subtype": "MigratieDummy",
+          "nodeid": "1",
+          "Service_Component": "WBS000195",
+          "Name": "HMD000002"
+        }
+      }
+    ],
+    "df": [
+      {
+        "identity": 1363,
+        "start": 709,
+        "end": 815,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1380,
+        "start": 1033,
+        "end": 1300,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1497,
+        "start": 704,
+        "end": 707,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1411,
+        "start": 1305,
+        "end": 1394,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1370,
+        "start": 780,
+        "end": 777,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1415,
+        "start": 938,
+        "end": 841,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1397,
+        "start": 760,
+        "end": 631,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1494,
+        "start": 1454,
+        "end": 941,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1500,
+        "start": 976,
+        "end": 773,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1406,
+        "start": 96,
+        "end": 251,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1389,
+        "start": 604,
+        "end": 1096,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1388,
+        "start": 599,
+        "end": 604,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1385,
+        "start": 867,
+        "end": 195,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1493,
+        "start": 916,
+        "end": 1454,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1495,
+        "start": 941,
+        "end": 610,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1512,
+        "start": 979,
+        "end": 101,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1386,
+        "start": 195,
+        "end": 199,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1391,
+        "start": 1280,
+        "end": 1310,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1485,
+        "start": 165,
+        "end": 406,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1514,
+        "start": 266,
+        "end": 761,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1509,
+        "start": 650,
+        "end": 858,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1492,
+        "start": 1370,
+        "end": 916,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1398,
+        "start": 631,
+        "end": 935,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1407,
+        "start": 251,
+        "end": 643,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1401,
+        "start": 158,
+        "end": 403,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1413,
+        "start": 428,
+        "end": 920,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1392,
+        "start": 1310,
+        "end": 1313,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1535,
+        "start": 287,
+        "end": 989,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1505,
+        "start": 655,
+        "end": 108,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1537,
+        "start": 999,
+        "end": 1048,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1503,
+        "start": 986,
+        "end": 996,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1480,
+        "start": 1029,
+        "end": 1297,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1412,
+        "start": 1394,
+        "end": 428,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1367,
+        "start": 787,
+        "end": 784,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1403,
+        "start": 870,
+        "end": 401,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1504,
+        "start": 996,
+        "end": 655,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1366,
+        "start": 201,
+        "end": 787,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1377,
+        "start": 663,
+        "end": 144,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1369,
+        "start": 781,
+        "end": 780,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1507,
+        "start": 291,
+        "end": 863,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1381,
+        "start": 1300,
+        "end": 1364,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1390,
+        "start": 1096,
+        "end": 1280,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1524,
+        "start": 859,
+        "end": 651,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1402,
+        "start": 403,
+        "end": 870,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1365,
+        "start": 818,
+        "end": 201,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1526,
+        "start": 102,
+        "end": 287,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1414,
+        "start": 920,
+        "end": 938,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1499,
+        "start": 1015,
+        "end": 976,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1362,
+        "start": 820,
+        "end": 709,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1393,
+        "start": 1313,
+        "end": 853,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1496,
+        "start": 610,
+        "end": 704,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1482,
+        "start": 1350,
+        "end": 249,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1502,
+        "start": 1043,
+        "end": 986,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1510,
+        "start": 858,
+        "end": 1038,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1400,
+        "start": 687,
+        "end": 158,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1488,
+        "start": 1034,
+        "end": 1301,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1536,
+        "start": 989,
+        "end": 999,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1383,
+        "start": 659,
+        "end": 662,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1409,
+        "start": 178,
+        "end": 1091,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1501,
+        "start": 773,
+        "end": 1043,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1513,
+        "start": 101,
+        "end": 266,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1487,
+        "start": 852,
+        "end": 1034,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1483,
+        "start": 249,
+        "end": 642,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1396,
+        "start": 1442,
+        "end": 760,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1404,
+        "start": 401,
+        "end": 871,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1374,
+        "start": 1526,
+        "end": 157,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1506,
+        "start": 108,
+        "end": 291,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1511,
+        "start": 1038,
+        "end": 979,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1387,
+        "start": 199,
+        "end": 599,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1394,
+        "start": 853,
+        "end": 1418,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1481,
+        "start": 1297,
+        "end": 1350,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1525,
+        "start": 651,
+        "end": 102,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1408,
+        "start": 643,
+        "end": 178,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1371,
+        "start": 777,
+        "end": 684,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1419,
+        "start": 95,
+        "end": 1029,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1417,
+        "start": 238,
+        "end": 754,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1489,
+        "start": 1301,
+        "end": 1282,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1498,
+        "start": 707,
+        "end": 1015,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1375,
+        "start": 157,
+        "end": 743,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1405,
+        "start": 871,
+        "end": 96,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1379,
+        "start": 386,
+        "end": 1033,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1410,
+        "start": 1091,
+        "end": 1305,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1484,
+        "start": 642,
+        "end": 165,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1418,
+        "start": 754,
+        "end": 95,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1372,
+        "start": 684,
+        "end": 755,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1399,
+        "start": 935,
+        "end": 687,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1373,
+        "start": 755,
+        "end": 1526,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1486,
+        "start": 406,
+        "end": 852,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1382,
+        "start": 1364,
+        "end": 659,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1368,
+        "start": 784,
+        "end": 781,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1491,
+        "start": 1334,
+        "end": 1370,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1364,
+        "start": 815,
+        "end": 818,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1395,
+        "start": 1418,
+        "end": 1442,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1376,
+        "start": 743,
+        "end": 663,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1490,
+        "start": 1282,
+        "end": 1334,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1515,
+        "start": 761,
+        "end": 859,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1416,
+        "start": 841,
+        "end": 238,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1508,
+        "start": 863,
+        "end": 650,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1384,
+        "start": 662,
+        "end": 867,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      },
+      {
+        "identity": 1378,
+        "start": 144,
+        "end": 386,
+        "type": "DF",
+        "properties": {
+          "EntityId": "BPI14HMD000002",
+          "EntityType": "Configuration_Item"
+        }
+      }
+    ],
+    "EC": [
+      {
+        "identity": 1864,
+        "start": 709,
+        "end": 742,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 193,
+        "start": 1033,
+        "end": 1287,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1859,
+        "start": 704,
+        "end": 740,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 218,
+        "start": 1305,
+        "end": 1341,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1168,
+        "start": 780,
+        "end": 832,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1614,
+        "start": 938,
+        "end": 965,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 593,
+        "start": 760,
+        "end": 828,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1432,
+        "start": 1454,
+        "end": 1520,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1667,
+        "start": 976,
+        "end": 983,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1447,
+        "start": 96,
+        "end": 211,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1808,
+        "start": 604,
+        "end": 629,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1805,
+        "start": 599,
+        "end": 628,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1531,
+        "start": 867,
+        "end": 957,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1598,
+        "start": 916,
+        "end": 960,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1655,
+        "start": 941,
+        "end": 966,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1670,
+        "start": 979,
+        "end": 984,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1517,
+        "start": 195,
+        "end": 235,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 204,
+        "start": 1280,
+        "end": 1292,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1468,
+        "start": 165,
+        "end": 229,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1712,
+        "start": 266,
+        "end": 618,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1830,
+        "start": 650,
+        "end": 721,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1420,
+        "start": 1370,
+        "end": 1490,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1813,
+        "start": 631,
+        "end": 712,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1707,
+        "start": 251,
+        "end": 617,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1465,
+        "start": 158,
+        "end": 228,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1795,
+        "start": 428,
+        "end": 625,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 222,
+        "start": 1310,
+        "end": 1344,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2181,
+        "start": 1048,
+        "end": 1050,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1713,
+        "start": 287,
+        "end": 619,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1835,
+        "start": 655,
+        "end": 726,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1686,
+        "start": 999,
+        "end": 1004,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1675,
+        "start": 986,
+        "end": 993,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 190,
+        "start": 1029,
+        "end": 1286,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1423,
+        "start": 1394,
+        "end": 1502,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1175,
+        "start": 787,
+        "end": 835,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1534,
+        "start": 870,
+        "end": 958,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1683,
+        "start": 996,
+        "end": 1003,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1522,
+        "start": 201,
+        "end": 237,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1843,
+        "start": 663,
+        "end": 729,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1169,
+        "start": 781,
+        "end": 833,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1717,
+        "start": 291,
+        "end": 620,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 214,
+        "start": 1300,
+        "end": 1339,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 201,
+        "start": 1096,
+        "end": 1291,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1343,
+        "start": 859,
+        "end": 954,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1789,
+        "start": 403,
+        "end": 623,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1269,
+        "start": 818,
+        "end": 839,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1453,
+        "start": 102,
+        "end": 221,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1601,
+        "start": 920,
+        "end": 961,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2168,
+        "start": 1015,
+        "end": 1039,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1271,
+        "start": 820,
+        "end": 840,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 225,
+        "start": 1313,
+        "end": 1345,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1810,
+        "start": 610,
+        "end": 630,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 232,
+        "start": 1350,
+        "end": 1478,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2176,
+        "start": 1043,
+        "end": 1049,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1336,
+        "start": 858,
+        "end": 952,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1849,
+        "start": 687,
+        "end": 731,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 194,
+        "start": 1034,
+        "end": 1288,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1678,
+        "start": 989,
+        "end": 994,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1839,
+        "start": 659,
+        "end": 727,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1471,
+        "start": 178,
+        "end": 231,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 857,
+        "start": 773,
+        "end": 830,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1452,
+        "start": 101,
+        "end": 212,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1330,
+        "start": 852,
+        "end": 950,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1706,
+        "start": 249,
+        "end": 616,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1430,
+        "start": 1442,
+        "end": 1514,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1788,
+        "start": 401,
+        "end": 622,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1435,
+        "start": 1526,
+        "end": 206,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1457,
+        "start": 108,
+        "end": 222,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2173,
+        "start": 1038,
+        "end": 1040,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1520,
+        "start": 199,
+        "end": 236,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1331,
+        "start": 853,
+        "end": 951,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 211,
+        "start": 1297,
+        "end": 1337,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1831,
+        "start": 651,
+        "end": 725,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1825,
+        "start": 643,
+        "end": 717,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 861,
+        "start": 777,
+        "end": 831,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1446,
+        "start": 95,
+        "end": 209,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1593,
+        "start": 238,
+        "end": 613,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 215,
+        "start": 1301,
+        "end": 1340,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1862,
+        "start": 707,
+        "end": 741,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1464,
+        "start": 157,
+        "end": 227,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1595,
+        "start": 871,
+        "end": 959,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1785,
+        "start": 386,
+        "end": 621,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 197,
+        "start": 1091,
+        "end": 1289,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1824,
+        "start": 642,
+        "end": 715,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2725,
+        "start": 754,
+        "end": 826,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1846,
+        "start": 684,
+        "end": 730,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1611,
+        "start": 935,
+        "end": 964,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2726,
+        "start": 755,
+        "end": 827,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1792,
+        "start": 406,
+        "end": 624,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 235,
+        "start": 1364,
+        "end": 1484,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1172,
+        "start": 784,
+        "end": 834,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 227,
+        "start": 1334,
+        "end": 1347,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1266,
+        "start": 815,
+        "end": 838,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1427,
+        "start": 1418,
+        "end": 1508,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1867,
+        "start": 743,
+        "end": 823,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 206,
+        "start": 1282,
+        "end": 1293,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 594,
+        "start": 761,
+        "end": 829,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1283,
+        "start": 841,
+        "end": 946,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1527,
+        "start": 863,
+        "end": 955,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1842,
+        "start": 662,
+        "end": 728,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1461,
+        "start": 144,
+        "end": 223,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": [
+      {
+        "identity": 742,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1287,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 740,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1341,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 832,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 965,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 828,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1520,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 983,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 211,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 629,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 628,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 957,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 960,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 966,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 984,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 235,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1292,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 229,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 618,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 721,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1490,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 712,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 617,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 228,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 625,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1344,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1050,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 619,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 726,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1004,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 993,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1286,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1502,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 835,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 958,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1003,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 237,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 729,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 833,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 620,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1339,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1291,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 954,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 623,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 839,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 221,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 961,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1039,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 840,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1345,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 630,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1478,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1049,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 952,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 731,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1288,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 994,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 727,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 231,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 830,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 212,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 950,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 616,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1514,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 622,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 206,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 222,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1040,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 236,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 951,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1337,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 725,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 717,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 831,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 209,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 613,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1340,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 741,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 227,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 959,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 621,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1289,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 715,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 826,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 730,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 964,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 827,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 624,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1484,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 834,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1347,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 838,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1508,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 823,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1293,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 829,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 946,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 955,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 728,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 223,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      }
+    ]
+  },
+  {
+    "ent": {
+      "identity": 679,
+      "labels": [
+        "Entity"
+      ],
+      "properties": {
+        "EntityType": "Incident",
+        "IDraw": "IM0025393",
+        "uID": "IncidentBPI14IM0025393",
+        "ID": "BPI14IM0025393",
+        "Log": "BPI14"
+      }
+    },
+    "events": [
+      {
+        "identity": 1203,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-03 11:58:14",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Activity_Assignment",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-03 11:58:14",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 987,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-08 15:24:11",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Resolved_Time",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-08 15:24:11",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1190,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-03 11:58:14",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Activity_Reassignment",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-03 11:58:14",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 977,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-03 11:52:54",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Open_Time",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-03 11:52:54",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1198,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-08 15:22:46",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Activity_Status Change",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-08 15:22:46",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1210,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-07 13:20:10",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Activity_Operator Update",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-07 13:20:10",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1205,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-08 15:22:46",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Activity_Problem Workaround",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-08 15:22:46",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1181,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-08 15:24:22",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Activity_Closed",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-08 15:24:22",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 997,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-08 15:24:21",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Close_Time",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-08 15:24:21",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1194,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-03 11:52:55",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Activity_Open",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-03 11:52:55",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1185,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Data",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-01-08 15:24:22",
+          "IDraw": "IM0025393",
+          "Activity": "Incident_Activity_Caused By CI",
+          "KM_number": "KM0000036",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0075751",
+          "Close_Time": "2014-01-08 15:24:21",
+          "ID": "0",
+          "Resolved_Time": "2014-01-08 15:24:11",
+          "nodeid": "2",
+          "Status": "Closed",
+          "Impact": "5.0",
+          "Priority": "5.0",
+          "Handle_Time_Hours": "35\"",
+          "Open_Time": "2014-01-03 11:52:54",
+          "Incident_ID": "IM0025393",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "1",
+          "End": "2014-01-08 15:24:22",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "5",
+          "CI_ID_aff": "0"
+        }
+      }
+    ],
+    "df": [
+      {
+        "identity": 2966,
+        "start": 1203,
+        "end": 1210,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0025393"
+        }
+      },
+      {
+        "identity": 2970,
+        "start": 987,
+        "end": 997,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0025393"
+        }
+      },
+      {
+        "identity": 2965,
+        "start": 1190,
+        "end": 1203,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0025393"
+        }
+      },
+      {
+        "identity": 2963,
+        "start": 977,
+        "end": 1194,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0025393"
+        }
+      },
+      {
+        "identity": 2968,
+        "start": 1198,
+        "end": 1205,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0025393"
+        }
+      },
+      {
+        "identity": 2967,
+        "start": 1210,
+        "end": 1198,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0025393"
+        }
+      },
+      {
+        "identity": 2969,
+        "start": 1205,
+        "end": 987,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0025393"
+        }
+      },
+      {
+        "identity": 2972,
+        "start": 1181,
+        "end": 1185,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0025393"
+        }
+      },
+      {
+        "identity": 2971,
+        "start": 997,
+        "end": 1181,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0025393"
+        }
+      },
+      {
+        "identity": 2964,
+        "start": 1194,
+        "end": 1190,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0025393"
+        }
+      }
+    ],
+    "EC": [
+      {
+        "identity": 2329,
+        "start": 1203,
+        "end": 1547,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1676,
+        "start": 987,
+        "end": 993,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2316,
+        "start": 1190,
+        "end": 1544,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1668,
+        "start": 977,
+        "end": 983,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2324,
+        "start": 1198,
+        "end": 1546,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2336,
+        "start": 1210,
+        "end": 1549,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2331,
+        "start": 1205,
+        "end": 1548,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2307,
+        "start": 1181,
+        "end": 1542,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1684,
+        "start": 997,
+        "end": 1003,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2320,
+        "start": 1194,
+        "end": 1545,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2311,
+        "start": 1185,
+        "end": 1543,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": [
+      {
+        "identity": 1547,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 993,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1544,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 983,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1546,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1549,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1548,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1542,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1003,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1545,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1543,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      }
+    ]
+  },
+  {
+    "ent": {
+      "identity": 680,
+      "labels": [
+        "Entity"
+      ],
+      "properties": {
+        "EntityType": "Incident",
+        "IDraw": "IM0039803",
+        "uID": "IncidentBPI14IM0039803",
+        "ID": "BPI14IM0039803",
+        "Log": "BPI14"
+      }
+    },
+    "events": [
+      {
+        "identity": 1237,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 11:14:23",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Reassignment",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 11:14:23",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1276,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-28 09:57:15",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-28 09:57:15",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1541,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 15:57:53",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 15:57:53",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1275,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-06 13:06:03",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Assignment",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-06 13:06:03",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1256,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-02-26 13:14:31",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Status Change",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-02-26 13:14:31",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1269,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 09:46:06",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 09:46:06",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 982,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-02-26 11:32:25",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Open_Time",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-02-26 11:32:25",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1242,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-02-26 13:16:17",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Operator Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-02-26 13:16:17",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1246,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-06 13:01:16",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Assignment",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-06 13:01:16",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1316,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 10:55:35",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 10:55:35",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1218,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 11:14:23",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Assignment",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 11:14:23",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1534,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-28 09:47:23",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Assignment",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-28 09:47:23",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1267,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 15:59:38",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Closed",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 15:59:38",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1220,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-05 07:43:24",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Operator Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-05 07:43:24",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1226,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 10:09:19",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 10:09:19",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1002,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 15:59:37",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Close_Time",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 15:59:37",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 992,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 15:59:35",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Resolved_Time",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 15:59:35",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1249,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-06 13:01:16",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Reassignment",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-06 13:01:16",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1531,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-28 09:47:23",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Reassignment",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-28 09:47:23",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1342,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-02-26 11:36:29",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Description Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-02-26 11:36:29",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1234,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-02-26 12:46:23",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Assignment",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-02-26 12:46:23",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1255,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-02-26 11:32:26",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Open",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-02-26 11:32:26",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1263,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 11:14:23",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 11:14:23",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1215,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-28 09:58:34",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-28 09:58:34",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1320,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-02-26 15:48:08",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Operator Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-02-26 15:48:08",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      },
+      {
+        "identity": 1228,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Alert_Status": "closed",
+          "Closure_Code": "Other",
+          "ServiceComp_WBS_CBy": "WBS000195",
+          "Category": "incident",
+          "CI_ID_CBy": "0",
+          "Start": "2014-03-31 09:47:45",
+          "IDraw": "IM0039803",
+          "Activity": "Incident_Activity_Update",
+          "KM_number": "KM0001274",
+          "Service_Component_WBS_aff": "WBS000195",
+          "Related_Interaction": "SD0121418",
+          "Nr_Related_Changes": "1",
+          "Close_Time": "2014-03-31 15:59:37",
+          "ID": "1",
+          "Resolved_Time": "2014-03-31 15:59:35",
+          "nodeid": "13",
+          "Status": "Closed",
+          "Impact": "3.0",
+          "Priority": "3.0",
+          "Open_Time": "2014-02-26 11:32:25",
+          "Handle_Time_Hours": "1\"",
+          "Incident_ID": "IM0039803",
+          "EntityType": "Incident",
+          "Nr_Reassignments": "3",
+          "End": "2014-03-31 09:47:45",
+          "Related_Change": "C00018435",
+          "Nr_Related_Interactions": "1",
+          "Urgency": "3",
+          "CI_ID_aff": "0"
+        }
+      }
+    ],
+    "df": [
+      {
+        "identity": 1289,
+        "start": 1237,
+        "end": 1263,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1277,
+        "start": 1276,
+        "end": 1215,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1291,
+        "start": 1541,
+        "end": 992,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1274,
+        "start": 1275,
+        "end": 1531,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 591,
+        "start": 1256,
+        "end": 1242,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1279,
+        "start": 1269,
+        "end": 1228,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 587,
+        "start": 982,
+        "end": 1255,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 592,
+        "start": 1242,
+        "end": 1320,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 852,
+        "start": 1246,
+        "end": 1249,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1282,
+        "start": 1316,
+        "end": 1218,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1288,
+        "start": 1218,
+        "end": 1237,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1276,
+        "start": 1534,
+        "end": 1276,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 851,
+        "start": 1220,
+        "end": 1246,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1281,
+        "start": 1226,
+        "end": 1316,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1293,
+        "start": 1002,
+        "end": 1267,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1292,
+        "start": 992,
+        "end": 1002,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 853,
+        "start": 1249,
+        "end": 1275,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1275,
+        "start": 1531,
+        "end": 1534,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 589,
+        "start": 1342,
+        "end": 1234,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 590,
+        "start": 1234,
+        "end": 1256,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 588,
+        "start": 1255,
+        "end": 1342,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1290,
+        "start": 1263,
+        "end": 1541,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1278,
+        "start": 1215,
+        "end": 1269,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 850,
+        "start": 1320,
+        "end": 1220,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      },
+      {
+        "identity": 1280,
+        "start": 1228,
+        "end": 1226,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Incident",
+          "EntityId": "BPI14IM0039803"
+        }
+      }
+    ],
+    "EC": [
+      {
+        "identity": 2363,
+        "start": 1237,
+        "end": 1556,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2402,
+        "start": 1276,
+        "end": 1566,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2429,
+        "start": 1541,
+        "end": 1572,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2401,
+        "start": 1275,
+        "end": 1565,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2382,
+        "start": 1256,
+        "end": 1561,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2395,
+        "start": 1269,
+        "end": 1564,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1673,
+        "start": 982,
+        "end": 984,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2368,
+        "start": 1242,
+        "end": 1557,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2372,
+        "start": 1246,
+        "end": 1558,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2406,
+        "start": 1316,
+        "end": 1567,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2344,
+        "start": 1218,
+        "end": 1551,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2422,
+        "start": 1534,
+        "end": 1571,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2393,
+        "start": 1267,
+        "end": 1563,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2346,
+        "start": 1220,
+        "end": 1552,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2352,
+        "start": 1226,
+        "end": 1553,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1689,
+        "start": 1002,
+        "end": 1004,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1681,
+        "start": 992,
+        "end": 994,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2375,
+        "start": 1249,
+        "end": 1559,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2419,
+        "start": 1531,
+        "end": 1570,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2414,
+        "start": 1342,
+        "end": 1569,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2360,
+        "start": 1234,
+        "end": 1555,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2381,
+        "start": 1255,
+        "end": 1560,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2389,
+        "start": 1263,
+        "end": 1562,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2341,
+        "start": 1215,
+        "end": 1550,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2410,
+        "start": 1320,
+        "end": 1568,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2354,
+        "start": 1228,
+        "end": 1554,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": [
+      {
+        "identity": 1556,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1566,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1572,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1565,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1561,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1564,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 984,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1557,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1558,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1567,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1551,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1571,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1563,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1552,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1553,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1004,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 994,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1559,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1570,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1569,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1555,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1560,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1562,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1550,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1568,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1554,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      }
+    ]
+  },
+  {
+    "ent": {
+      "identity": 688,
+      "labels": [
+        "Entity"
+      ],
+      "properties": {
+        "EntityType": "Interaction",
+        "IDraw": "SD0121418",
+        "uID": "InteractionBPI14SD0121418",
+        "ID": "BPI14SD0121418",
+        "Log": "BPI14"
+      }
+    },
+    "events": [
+      {
+        "identity": 1045,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Status": "Closed",
+          "Impact": "3",
+          "Closure_Code": "Other",
+          "Interaction_ID": "SD0121418",
+          "Category": "incident",
+          "Start": "2014-03-31 16:00:00",
+          "Priority": "3",
+          "IDraw": "SD0121418",
+          "First_Call_Resolution": "N",
+          "Activity": "Interaction_Close_Time",
+          "KM_number": "KM0001274",
+          "Handle_Time_secs": "0",
+          "Service_Comp_WBS_aff": "WBS000195",
+          "EntityType": "Interaction",
+          "Open_Time_First_Touch": "2014-02-26 11:28:00",
+          "Close_Time": "2014-03-31 16:00:00",
+          "End": "2014-03-31 16:00:00",
+          "ID": "1",
+          "Urgency": "3",
+          "nodeid": "16",
+          "CI_ID_aff": "0",
+          "Related_Incident": "IM0039803"
+        }
+      },
+      {
+        "identity": 1035,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Status": "Closed",
+          "Impact": "3",
+          "Closure_Code": "Other",
+          "Interaction_ID": "SD0121418",
+          "Category": "incident",
+          "Start": "2014-02-26 11:28:00",
+          "Priority": "3",
+          "IDraw": "SD0121418",
+          "First_Call_Resolution": "N",
+          "Activity": "Interaction_Open_Time_First_Touch",
+          "KM_number": "KM0001274",
+          "Handle_Time_secs": "0",
+          "Service_Comp_WBS_aff": "WBS000195",
+          "EntityType": "Interaction",
+          "Open_Time_First_Touch": "2014-02-26 11:28:00",
+          "Close_Time": "2014-03-31 16:00:00",
+          "End": "2014-02-26 11:28:00",
+          "ID": "1",
+          "Urgency": "3",
+          "nodeid": "16",
+          "CI_ID_aff": "0",
+          "Related_Incident": "IM0039803"
+        }
+      }
+    ],
+    "df": [
+      {
+        "identity": 517,
+        "start": 1035,
+        "end": 1045,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Interaction",
+          "EntityId": "BPI14SD0121418"
+        }
+      }
+    ],
+    "EC": [
+      {
+        "identity": 2178,
+        "start": 1045,
+        "end": 1050,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2170,
+        "start": 1035,
+        "end": 1040,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": [
+      {
+        "identity": 1050,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1040,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      }
+    ]
+  },
+  {
+    "ent": {
+      "identity": 681,
+      "labels": [
+        "Entity"
+      ],
+      "properties": {
+        "EntityType": "Interaction",
+        "IDraw": "SD0075751",
+        "uID": "InteractionBPI14SD0075751",
+        "ID": "BPI14SD0075751",
+        "Log": "BPI14"
+      }
+    },
+    "events": [
+      {
+        "identity": 1014,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Status": "Closed",
+          "Impact": "5",
+          "Closure_Code": "Data",
+          "Interaction_ID": "SD0075751",
+          "Category": "incident",
+          "Start": "2014-01-03 11:45:00",
+          "Priority": "5",
+          "IDraw": "SD0075751",
+          "First_Call_Resolution": "N",
+          "Activity": "Interaction_Open_Time_First_Touch",
+          "KM_number": "KM0000036",
+          "Handle_Time_secs": "426",
+          "Service_Comp_WBS_aff": "WBS000195",
+          "EntityType": "Interaction",
+          "Open_Time_First_Touch": "2014-01-03 11:45:00",
+          "Close_Time": "2014-01-08 15:24:00",
+          "End": "2014-01-03 11:45:00",
+          "ID": "0",
+          "Urgency": "5",
+          "nodeid": "15",
+          "CI_ID_aff": "0",
+          "Related_Incident": "IM0025393"
+        }
+      },
+      {
+        "identity": 1042,
+        "labels": [
+          "Event"
+        ],
+        "properties": {
+          "Status": "Closed",
+          "Impact": "5",
+          "Closure_Code": "Data",
+          "Interaction_ID": "SD0075751",
+          "Category": "incident",
+          "Start": "2014-01-08 15:24:00",
+          "Priority": "5",
+          "IDraw": "SD0075751",
+          "First_Call_Resolution": "N",
+          "Activity": "Interaction_Close_Time",
+          "KM_number": "KM0000036",
+          "Handle_Time_secs": "426",
+          "Service_Comp_WBS_aff": "WBS000195",
+          "EntityType": "Interaction",
+          "Open_Time_First_Touch": "2014-01-03 11:45:00",
+          "Close_Time": "2014-01-08 15:24:00",
+          "End": "2014-01-08 15:24:00",
+          "ID": "0",
+          "Urgency": "5",
+          "nodeid": "15",
+          "CI_ID_aff": "0",
+          "Related_Incident": "IM0025393"
+        }
+      }
+    ],
+    "df": [
+      {
+        "identity": 2962,
+        "start": 1014,
+        "end": 1042,
+        "type": "DF",
+        "properties": {
+          "EntityType": "Interaction",
+          "EntityId": "BPI14SD0075751"
+        }
+      }
+    ],
+    "EC": [
+      {
+        "identity": 2167,
+        "start": 1014,
+        "end": 1039,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 2175,
+        "start": 1042,
+        "end": 1049,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": [
+      {
+        "identity": 1039,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      },
+      {
+        "identity": 1049,
+        "labels": [
+          "Common"
+        ],
+        "properties": {}
+      }
+    ]
+  }
+]

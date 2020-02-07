@@ -1,0 +1,152 @@
+﻿[
+  {
+    "EC": [
+      {
+        "identity": 1667,
+        "start": 976,
+        "end": 983,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1668,
+        "start": 977,
+        "end": 983,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": {
+      "identity": 983,
+      "labels": [
+        "Common"
+      ],
+      "properties": {}
+    }
+  },
+  {
+    "EC": [
+      {
+        "identity": 1670,
+        "start": 979,
+        "end": 984,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1673,
+        "start": 982,
+        "end": 984,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": {
+      "identity": 984,
+      "labels": [
+        "Common"
+      ],
+      "properties": {}
+    }
+  },
+  {
+    "EC": [
+      {
+        "identity": 1686,
+        "start": 999,
+        "end": 1004,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1689,
+        "start": 1002,
+        "end": 1004,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": {
+      "identity": 1004,
+      "labels": [
+        "Common"
+      ],
+      "properties": {}
+    }
+  },
+  {
+    "EC": [
+      {
+        "identity": 1675,
+        "start": 986,
+        "end": 993,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1676,
+        "start": 987,
+        "end": 993,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": {
+      "identity": 993,
+      "labels": [
+        "Common"
+      ],
+      "properties": {}
+    }
+  },
+  {
+    "EC": [
+      {
+        "identity": 1683,
+        "start": 996,
+        "end": 1003,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1684,
+        "start": 997,
+        "end": 1003,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": {
+      "identity": 1003,
+      "labels": [
+        "Common"
+      ],
+      "properties": {}
+    }
+  },
+  {
+    "EC": [
+      {
+        "identity": 1678,
+        "start": 989,
+        "end": 994,
+        "type": "E_C",
+        "properties": {}
+      },
+      {
+        "identity": 1681,
+        "start": 992,
+        "end": 994,
+        "type": "E_C",
+        "properties": {}
+      }
+    ],
+    "common": {
+      "identity": 994,
+      "labels": [
+        "Common"
+      ],
+      "properties": {}
+    }
+  }
+]

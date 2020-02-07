@@ -10,22 +10,23 @@ log = Logger.instance()
 # # @config: Root configuration
 def create(neo4j: Neo4JConnection, config: Config):
     entities = config['entity']
+    non_entities = config['non_entity']
     log_name = config['log']['name']
 
-    for entity in entities:
+    for entity in entities + non_entities:
         label = entity['label']
         id_column = entity["id_column"]
 
         neo4j.query(f"""
             MATCH (n:{label})
-            WITH DISTINCT n.{id_column} as id
             CALL apoc.create.node(
                 ['Entity'], 
                 {{
                     EntityType:'{label}', 
-                    ID:'{log_name}'+id, 
-                    IDraw:id, Log:'{log_name}', 
-                    uID:'{label}{log_name}'+id
+                    ID:'{log_name}' + n.{id_column}, 
+                    IDraw: n.{id_column}, 
+                    Log:'{log_name}', 
+                    uID:'{label}{log_name}'+ n.{id_column}
                 }}) yield node
-            RETURN node
+            SET node+=n
         """, f"Creating entity nodes with EntityType:{label}")

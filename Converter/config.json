@@ -14,7 +14,7 @@
       "label": "Change_Activity",
       "id_column": "ID",
       "event": {
-        "related_entities": ["Service_Component", "Configuration_Item"],
+        "related_entities": ["Service_Component", "Configuration_Item", "Change"],
         "create_from": [
           {
             "start_column": "Actual_Start",
@@ -43,6 +43,20 @@
           {
             "start_column": "Change_record_Close_Time",
             "activity": "Change: record_Close_Time"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Incident_Activity",
+      "id_column": "IncidentActivity_Number",
+      "event": {
+        "related_entities": ["Knowledge_Document", "Assignment_Group", "Incident", "Interaction"],
+        "create_from": [
+          {
+            "start_column": "DateStamp",
+            "end_column": "DateStamp",
+            "activity": "Incident_Activity: {IncidentActivity_Type}"
           }
         ]
       }
@@ -77,20 +91,6 @@
     {
       "label": "Configuration_Item",
       "id_column": "Name"
-    },
-    {
-      "label": "Incident_Activity",
-      "id_column": "IncidentActivity_Number",
-      "event": {
-        "related_entities": ["Knowledge_Document", "Assignment_Group", "Incident", "Interaction"],
-        "create_from": [
-          {
-            "start_column": "DateStamp",
-            "end_column": "DateStamp",
-            "activity": "Incident_Activity: {IncidentActivity_Type}"
-          }
-        ]
-      }
     },
     {
       "label": "Incident",

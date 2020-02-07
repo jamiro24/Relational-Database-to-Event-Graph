@@ -17,5 +17,4 @@ def create(neo4j: Neo4JConnection):
         CREATE (first)-[df:DF]->(second)
         SET df.EntityType = n.EntityType
         SET df.EntityId = n.ID
-        RETURN null
     """, 'Creating DF relations')

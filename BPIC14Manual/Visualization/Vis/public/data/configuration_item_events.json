@@ -1,0 +1,472 @@
+﻿[
+  {
+    "id": 541,
+    "time": "2014-01-08 15:24:00",
+    "activity": "Interaction_Close_Time"
+  },
+  {
+    "id": 542,
+    "time": "2014-03-31 16:00:00",
+    "activity": "Interaction_Close_Time"
+  },
+  {
+    "id": 556,
+    "time": "2014-01-03 11:45:00",
+    "activity": "Interaction_Open_Time_First_Touch"
+  },
+  {
+    "id": 557,
+    "time": "2014-02-26 11:28:00",
+    "activity": "Interaction_Open_Time_First_Touch"
+  },
+  {
+    "id": 555,
+    "time": "2014-03-31 15:59:37",
+    "activity": "Incident_Close_Time"
+  },
+  {
+    "id": 554,
+    "time": "2014-01-08 15:24:21",
+    "activity": "Incident_Close_Time"
+  },
+  {
+    "id": 553,
+    "time": "2014-03-31 15:59:35",
+    "activity": "Incident_Resolved_Time"
+  },
+  {
+    "id": 549,
+    "time": "2014-01-08 15:24:11",
+    "activity": "Incident_Resolved_Time"
+  },
+  {
+    "id": 538,
+    "time": "2014-02-26 11:32:25",
+    "activity": "Incident_Open_Time"
+  },
+  {
+    "id": 537,
+    "time": "2014-01-03 11:52:54",
+    "activity": "Incident_Open_Time"
+  },
+  {
+    "id": 431,
+    "time": "2013-12-18 16:14:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 430,
+    "time": "2013-10-25 13:10:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 439,
+    "time": "2013-12-18 16:16:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 429,
+    "time": "2013-10-23 12:54:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 428,
+    "time": "2013-10-01 08:01:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 408,
+    "time": "2014-03-20 16:32:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 407,
+    "time": "2014-02-25 13:19:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 405,
+    "time": "2013-12-13 07:32:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 402,
+    "time": "2013-11-12 12:06:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 435,
+    "time": "2013-10-21 09:24:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 427,
+    "time": "2014-01-13 08:24:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 432,
+    "time": "2013-11-01 09:35:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 436,
+    "time": "2013-11-11 11:00:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 406,
+    "time": "2013-10-09 11:05:00",
+    "activity": "Change_record_Close_Time"
+  },
+  {
+    "id": 179,
+    "time": "2013-11-29 12:07:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 171,
+    "time": "2013-09-17 09:02:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 186,
+    "time": "2014-01-07 16:17:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 182,
+    "time": "2013-08-07 16:29:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 512,
+    "time": "2013-07-11 14:16:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 513,
+    "time": "2013-06-03 10:36:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 534,
+    "time": "2012-08-22 14:42:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 184,
+    "time": "2014-03-20 09:25:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 183,
+    "time": "2013-10-10 12:35:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 536,
+    "time": "2011-09-01 09:13:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 535,
+    "time": "2012-08-22 14:42:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 511,
+    "time": "2013-07-16 10:53:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 514,
+    "time": "2013-04-16 08:13:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 187,
+    "time": "2013-07-16 11:08:00",
+    "activity": "Change_record_Open_Time"
+  },
+  {
+    "id": 288,
+    "time": "2014-01-29 12:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 264,
+    "time": "2013-10-16 09:02:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 287,
+    "time": "2013-10-31 00:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 383,
+    "time": "2013-09-22 00:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 401,
+    "time": "2012-06-01 00:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 385,
+    "time": "2013-10-23 00:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 167,
+    "time": "2013-12-18 14:00:00",
+    "activity": "Change_Actual_Start"
+  },
+  {
+    "id": 160,
+    "time": "2013-10-31 15:04:00",
+    "activity": "Change_Actual_Start"
+  },
+  {
+    "id": 159,
+    "time": "2013-12-18 10:00:00",
+    "activity": "Change_Actual_Start"
+  },
+  {
+    "id": 165,
+    "time": "2013-10-09 00:00:00",
+    "activity": "Change_Actual_Start"
+  },
+  {
+    "id": 157,
+    "time": "2013-12-04 08:07:00",
+    "activity": "Change_Actual_Start"
+  },
+  {
+    "id": 158,
+    "time": "2013-09-25 13:42:00",
+    "activity": "Change_Actual_Start"
+  },
+  {
+    "id": 166,
+    "time": "2013-10-09 00:00:00",
+    "activity": "Change_Actual_Start"
+  },
+  {
+    "id": 195,
+    "time": "2013-12-18 16:15:00",
+    "activity": "Change_Actual_End"
+  },
+  {
+    "id": 189,
+    "time": "2013-09-25 13:42:00",
+    "activity": "Change_Actual_End"
+  },
+  {
+    "id": 191,
+    "time": "2013-10-31 15:05:00",
+    "activity": "Change_Actual_End"
+  },
+  {
+    "id": 192,
+    "time": "2013-10-09 16:47:00",
+    "activity": "Change_Actual_End"
+  },
+  {
+    "id": 188,
+    "time": "2013-12-04 08:59:00",
+    "activity": "Change_Actual_End"
+  },
+  {
+    "id": 190,
+    "time": "2013-12-18 16:13:00",
+    "activity": "Change_Actual_End"
+  },
+  {
+    "id": 194,
+    "time": "2013-10-09 16:47:00",
+    "activity": "Change_Actual_End"
+  },
+  {
+    "id": 201,
+    "time": "2014-02-28 08:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 204,
+    "time": "2013-09-25 07:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 208,
+    "time": "2013-10-31 12:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 212,
+    "time": "2013-10-07 09:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 196,
+    "time": "2013-08-10 00:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 202,
+    "time": "2014-03-26 09:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 200,
+    "time": "2013-10-31 00:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 207,
+    "time": "2013-12-11 07:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 205,
+    "time": "2013-09-06 07:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 203,
+    "time": "2014-01-10 07:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 213,
+    "time": "2012-08-30 07:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 199,
+    "time": "2013-12-04 08:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 206,
+    "time": "2013-10-23 08:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 211,
+    "time": "2013-10-07 09:00:00",
+    "activity": "Change_Planned_Start"
+  },
+  {
+    "id": 233,
+    "time": "2014-01-10 17:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 229,
+    "time": "2013-12-04 12:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 236,
+    "time": "2013-10-23 12:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 237,
+    "time": "2013-12-11 12:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 221,
+    "time": "2013-11-16 17:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 230,
+    "time": "2013-10-31 00:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 262,
+    "time": "2013-10-07 13:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 261,
+    "time": "2013-10-07 13:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 234,
+    "time": "2013-09-25 13:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 238,
+    "time": "2013-10-31 17:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 231,
+    "time": "2014-02-28 12:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 235,
+    "time": "2013-10-25 13:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 232,
+    "time": "2014-03-26 12:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 263,
+    "time": "2013-12-26 00:00:00",
+    "activity": "Change_Planned_End"
+  },
+  {
+    "id": 291,
+    "time": "2013-09-25 17:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 292,
+    "time": "2013-09-25 17:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 290,
+    "time": "2014-01-10 00:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 286,
+    "time": "2013-12-04 13:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 289,
+    "time": "2014-03-26 00:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 400,
+    "time": "2013-12-31 00:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 388,
+    "time": "2013-12-31 00:00:00",
+    "activity": "Change_Requested_End_Date"
+  },
+  {
+    "id": 384,
+    "time": "2013-07-31 00:00:00",
+    "activity": "Change_Requested_End_Date"
+  }
+]

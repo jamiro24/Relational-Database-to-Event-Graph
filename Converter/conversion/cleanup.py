@@ -25,3 +25,11 @@ def warning():
     if answer != "y":
         log.info("Did not clear event graph")
         exit(1)
+
+
+def temp_variables(neo4j:Neo4JConnection):
+    neo4j.query("""
+        MATCH (ev:Event)
+        REMOVE ev.originID
+        REMOVE ev.commonID
+    """, "Cleaning up temp variables")

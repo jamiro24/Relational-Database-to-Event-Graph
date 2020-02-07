@@ -42,9 +42,11 @@ class Neo4JConnection:
         try:
             executed_query = driver.session().run(q)
             results = executed_query.values()
+            driver.close()
             return results
         except ServiceUnavailable:
             print("Session dropped while executing query, retrying")
+            driver.close()
             self.query(q)
 
     def close(self):
