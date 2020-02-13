@@ -1,7 +1,7 @@
 {
   "connection": {
     "neo4j": {
-      "jdbc": "bolt://127.0.0.1:7687",
+      "jdbc": "bolt://127.0.0.1:11012",
       "user": "neo4j",
       "password": "1234"
     }
@@ -90,7 +90,7 @@
     },
     {
       "label": "Configuration_Item",
-      "id_column": "Name"
+      "id_column": "ID"
     },
     {
       "label": "Incident",

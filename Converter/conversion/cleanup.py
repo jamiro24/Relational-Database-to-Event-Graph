@@ -27,7 +27,7 @@ def warning():
         exit(1)
 
 
-def temp_variables(neo4j:Neo4JConnection):
+def temp_variables(neo4j: Neo4JConnection):
     neo4j.query("""
         MATCH (ev:Event)
         REMOVE ev.originID

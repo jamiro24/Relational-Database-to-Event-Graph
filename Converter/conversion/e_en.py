@@ -9,5 +9,4 @@ def create(neo4j: Neo4JConnection):
         MATCH (en:Entity {IDraw: ev.IDraw, EntityType:ev.EntityType})
         CREATE (ev)-[r:E_EN]->(en)
         SET r.EntityType = en.EntityType
-        return null
     """, 'Creating E_EN relations')

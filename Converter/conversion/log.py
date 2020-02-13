@@ -9,5 +9,4 @@ def create(neo4j: Neo4JConnection):
         WITH l
         Match (e:Event)
         CREATE (l)-[r:L_E]->(e)
-        RETURN *
     """, 'Creating Log node with L_E relations')

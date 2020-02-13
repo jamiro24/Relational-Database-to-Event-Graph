@@ -167,10 +167,16 @@ def __create_temp_events_query(entity_config: dict, entities_config: dict,
     related_id_column = related_config['id_column']  # id column of related entity type
     related_label = related_config['label']  # label of related entity type
 
-    return f"""
+    query = f"""
             {match}
-            MERGE (n:TempEvent {{originID: ID({related_matcher}), commonID: ID(common)}})-[s:Source]->({related_matcher})
+            MERGE (n:TempEvent {{originID: ID({related_matcher}), commonID: ID(common)}})
+            """\
+
+    if related_matcher == 'common':
+        query += "-[s:Source]->(common)"
+
+    query += f"""
             ON CREATE SET n.EntityType="{related_label}"
             ON CREATE SET n.IDraw={related_matcher}.{related_id_column}
-            """  # ON CREATE SET n+={related_matcher}
-
+            """
+    return query

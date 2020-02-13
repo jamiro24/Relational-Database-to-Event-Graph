@@ -23,7 +23,7 @@ def create(neo4j: Neo4JConnection, config: Config):
                 ['Entity'], 
                 {{
                     EntityType:'{label}', 
-                    ID:'{log_name}' + n.{id_column}, 
+                    IDLog:'{log_name}' + n.{id_column}, 
                     IDraw: n.{id_column}, 
                     Log:'{log_name}', 
                     uID:'{label}{log_name}'+ n.{id_column}
