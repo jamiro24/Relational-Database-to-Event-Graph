@@ -38,7 +38,8 @@ def create(neo4j: Neo4JConnection, config: Config):
 # removes all template events from the database
 def __cleanup_temp(neo4j: Neo4JConnection):
     neo4j.query("""
-        MATCH (e:TempEvent)-[k:Source]->()
+        MATCH (e:TempEvent)
+        OPTIONAL MATCH (e)-[k:Source]->()
         DELETE e, k
         """, 'Cleaning up temp nodes')
 

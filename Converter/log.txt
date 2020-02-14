@@ -1,1 +1,62 @@
-2020-02-13 13:20:06 INFO     Executing query: Cleaning up `Entity` nodes and their relationships
+2020-02-14 07:03:33 INFO     Executing query: Cleaning up `Entity` nodes and their relationships
+2020-02-14 07:03:33 INFO     Executing query: Cleaning up `Event` nodes and their relationships
+2020-02-14 07:03:34 INFO     Executing query: Cleaning up `Log` nodes and their relationships
+2020-02-14 07:03:34 INFO     Executing query: Cleaning up `Common` nodes and their relationships
+2020-02-14 07:03:34 INFO     Executing query: Cleaning up `TempEvent` nodes and their relationships
+2020-02-14 07:03:34 INFO     Executing query: Creating index on :Entity(EntityType)
+2020-02-14 07:03:34 INFO     Executing query: Creating index on :Event(start)
+2020-02-14 07:03:34 INFO     Executing query: Creating index on :TempEvent(originID)
+2020-02-14 07:03:34 INFO     Executing query: Creating entity nodes with EntityType:Change
+2020-02-14 07:03:41 INFO     Executing query: Creating entity nodes with EntityType:Assignment_Group
+2020-02-14 07:03:42 INFO     Executing query: Creating entity nodes with EntityType:Knowledge_Document
+2020-02-14 07:03:42 INFO     Executing query: Creating entity nodes with EntityType:Configuration_Item
+2020-02-14 07:03:46 INFO     Executing query: Creating entity nodes with EntityType:Incident
+2020-02-14 07:04:00 INFO     Executing query: Creating entity nodes with EntityType:Service_Component
+2020-02-14 07:04:01 INFO     Executing query: Creating entity nodes with EntityType:Interaction
+2020-02-14 07:04:44 INFO     Executing query: Creating entity nodes with EntityType:Change_Activity
+2020-02-14 07:04:52 INFO     Executing query: Creating entity nodes with EntityType:Incident_Activity
+2020-02-14 07:06:25 INFO     Executing query: Creating temp events for Change entities
+2020-02-14 07:06:31 INFO     Executing query: Creating temp events for <Change_Activity:Service_Component entities related to Change
+2020-02-14 07:06:54 INFO     Executing query: Creating temp events for <Change_Activity:Configuration_Item entities related to Change
+2020-02-14 07:06:57 INFO     Executing query: Creating event nodes for Change.Scheduled_Downtime_Start
+2020-02-14 07:07:00 INFO     Executing query: Creating event nodes for Change.Scheduled_Downtime_End
+2020-02-14 07:07:01 INFO     Executing query: Cleaning up temp nodes
+2020-02-14 07:07:03 INFO     Executing query: Creating temp events for Incident entities
+2020-02-14 07:07:09 INFO     Executing query: Creating temp events for Service_Component entities related to Incident
+2020-02-14 07:10:00 INFO     Executing query: Creating temp events for Configuration_Item entities related to Incident
+2020-02-14 07:10:38 INFO     Executing query: Creating temp events for Knowledge_Document entities related to Incident
+2020-02-14 07:10:50 INFO     Executing query: Creating event nodes for Incident.Open_Time
+2020-02-14 07:11:11 INFO     Executing query: Creating event nodes for Incident.Reopen_Time
+2020-02-14 07:11:14 INFO     Executing query: Creating event nodes for Incident.Resolved_Time
+2020-02-14 07:11:36 INFO     Executing query: Creating event nodes for Incident.Close_Time
+2020-02-14 07:11:58 INFO     Executing query: Cleaning up temp nodes
+2020-02-14 07:12:07 INFO     Executing query: Creating temp events for Interaction entities
+2020-02-14 07:12:27 INFO     Executing query: Creating temp events for Service_Component entities related to Interaction
+2020-02-14 07:34:09 INFO     Executing query: Creating temp events for Configuration_Item entities related to Interaction
+2020-02-14 07:37:59 INFO     Executing query: Creating temp events for Knowledge_Document entities related to Interaction
+2020-02-14 07:38:43 INFO     Executing query: Creating event nodes for Interaction.Open_Time_First_Touch
+2020-02-14 07:39:21 INFO     Executing query: Creating event nodes for Interaction.Close_Time
+2020-02-14 07:39:57 INFO     Executing query: Cleaning up temp nodes
+2020-02-14 07:40:03 INFO     Executing query: Creating temp events for Change_Activity entities
+2020-02-14 07:40:05 INFO     Executing query: Creating temp events for Service_Component entities related to Change_Activity
+2020-02-14 07:41:03 INFO     Executing query: Creating temp events for Configuration_Item entities related to Change_Activity
+2020-02-14 07:41:07 INFO     Executing query: Creating temp events for Change entities related to Change_Activity
+2020-02-14 07:41:08 INFO     Executing query: Creating event nodes for Change_Activity.Actual_Start
+2020-02-14 07:41:13 INFO     Executing query: Creating event nodes for Change_Activity.Actual_End
+2020-02-14 07:41:22 INFO     Executing query: Creating event nodes for Change_Activity.Planned_Start
+2020-02-14 07:41:30 INFO     Executing query: Creating event nodes for Change_Activity.Planned_End
+2020-02-14 07:41:37 INFO     Executing query: Creating event nodes for Change_Activity.Requested_End_Date
+2020-02-14 07:41:44 INFO     Executing query: Creating event nodes for Change_Activity.Change_record_Open_Time
+2020-02-14 07:41:51 INFO     Executing query: Creating event nodes for Change_Activity.Change_record_Close_Time
+2020-02-14 07:41:59 INFO     Executing query: Cleaning up temp nodes
+2020-02-14 07:42:01 INFO     Executing query: Creating temp events for Incident_Activity entities
+2020-02-14 07:42:29 INFO     Executing query: Creating temp events for Knowledge_Document entities related to Incident_Activity
+2020-02-14 07:54:27 INFO     Executing query: Creating temp events for Assignment_Group entities related to Incident_Activity
+2020-02-14 08:59:40 INFO     Executing query: Creating temp events for Incident entities related to Incident_Activity
+2020-02-14 08:59:59 INFO     Executing query: Creating temp events for Interaction entities related to Incident_Activity
+2020-02-14 09:00:16 INFO     Executing query: Creating event nodes for Incident_Activity.DateStamp
+2020-02-14 09:03:05 INFO     Executing query: Cleaning up temp nodes
+2020-02-14 09:03:37 INFO     Executing query: Creating E_EN relations
+2020-02-14 09:07:29 INFO     Executing query: Creating DF relations
+2020-02-14 09:11:59 INFO     Executing query: Creating Log node with L_E relations
+2020-02-14 09:13:55 INFO     Executing query: Cleaning up temp variables
