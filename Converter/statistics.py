@@ -7,6 +7,10 @@ from log.logger import INFO
 
 from statistics import counts
 from statistics import degrees
+from statistics import df_path_length
+from statistics import basic
+from statistics import diameter
+
 
 config = Config()
 
@@ -18,5 +22,8 @@ neo4j = Neo4JConnection(config)
 if not os.path.exists('statistics-csv'):
     os.makedirs('statistics-csv')
 
-# counts.calculate(neo4j)
+basic.calculate(neo4j, config)
+counts.calculate(neo4j)
 degrees.calculate(neo4j, config)
+df_path_length.calculate(neo4j, config)
+# diameter.calculate_v2(neo4j, config) # Too slow

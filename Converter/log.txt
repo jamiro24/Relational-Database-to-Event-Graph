@@ -1,0 +1,18 @@
+2020-02-21 13:36:30 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Change
+2020-02-21 13:36:30 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Change
+2020-02-21 13:36:30 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Assignment_Group
+2020-02-21 13:36:30 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Assignment_Group
+2020-02-21 13:36:30 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Knowledge_Document
+2020-02-21 13:36:30 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Knowledge_Document
+2020-02-21 13:36:30 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Configuration_Item
+2020-02-21 13:36:30 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Configuration_Item
+2020-02-21 13:36:30 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Incident
+2020-02-21 13:36:30 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Incident
+2020-02-21 13:36:31 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Service_Component
+2020-02-21 13:36:31 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Service_Component
+2020-02-21 13:36:31 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Interaction
+2020-02-21 13:36:31 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Interaction
+2020-02-21 13:36:31 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Change_Activity
+2020-02-21 13:36:31 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Change_Activity
+2020-02-21 13:36:31 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Incident_Activity
+2020-02-21 13:36:31 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Incident_Activity
