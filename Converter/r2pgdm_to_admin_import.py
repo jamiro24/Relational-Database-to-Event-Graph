@@ -2,7 +2,7 @@ import pandas as pd
 import sqlite3 as sql
 import os
 
-input_name = "bpic14.normalized.v2"
+input_name = "BPI17_normalized"
 input_path = f"{input_name}.db"
 
 input_conn = sql.connect(input_path)
@@ -66,5 +66,5 @@ f = open("admin/import-command.txt", "w")
 cmd = "bin/neo4j-admin import --relationships=\"import/edges.csv\""
 for table_name in table_dict.keys():
     cmd += f" --nodes=\"import/nodes-{table_name}.csv\""
-
+print(cmd)
 f.write(cmd)

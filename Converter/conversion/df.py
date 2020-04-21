@@ -8,7 +8,7 @@ def create(neo4j: Neo4JConnection):
         MATCH (n:Entity)
         MATCH (n)-[]-(ev)
         
-        WITH n, ev as nodes ORDER BY ev.Start, ID(ev)
+        WITH n, ev as nodes ORDER BY ev.Start, ev.commonID
         WITH n, collect(nodes) as nodeList
         WITH n, apoc.coll.pairsMin(nodeList) as pairs
         UNWIND pairs as pair

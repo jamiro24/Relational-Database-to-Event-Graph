@@ -1,0 +1,7 @@
+entities:
+
+Application
+Offer
+Resource
+Workflow same id as application events prefixed with W, wheras application events prefixed
+    origin

@@ -14,7 +14,7 @@ from conversion import log as lognode
 config = Config()
 
 log = Logger.instance()
-log.set_log_level(INFO)
+#log.set_log_level(INFO)
 
 neo4j = Neo4JConnection(config)
 

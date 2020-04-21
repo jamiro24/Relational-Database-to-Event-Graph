@@ -15,7 +15,7 @@ from statistics import diameter
 config = Config()
 
 log = Logger.instance()
-log.set_log_level(INFO)
+# log.set_log_level(INFO)
 
 neo4j = Neo4JConnection(config)
 
@@ -25,5 +25,8 @@ if not os.path.exists('statistics-csv'):
 basic.calculate(neo4j, config)
 counts.calculate(neo4j)
 degrees.calculate(neo4j, config)
+degrees.histograms_produce('degrees_histogram')
+
 df_path_length.calculate(neo4j, config)
-# diameter.calculate_v2(neo4j, config) # Too slow
+df_path_length.histograms_produce('df-path-length_histogram')
+#diameter.calculate(neo4j)

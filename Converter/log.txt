@@ -1,18 +1,779 @@
-2020-02-21 13:36:30 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Change
-2020-02-21 13:36:30 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Change
-2020-02-21 13:36:30 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Assignment_Group
-2020-02-21 13:36:30 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Assignment_Group
-2020-02-21 13:36:30 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Knowledge_Document
-2020-02-21 13:36:30 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Knowledge_Document
-2020-02-21 13:36:30 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Configuration_Item
-2020-02-21 13:36:30 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Configuration_Item
-2020-02-21 13:36:30 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Incident
-2020-02-21 13:36:30 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Incident
-2020-02-21 13:36:31 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Service_Component
-2020-02-21 13:36:31 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Service_Component
-2020-02-21 13:36:31 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Interaction
-2020-02-21 13:36:31 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Interaction
-2020-02-21 13:36:31 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Change_Activity
-2020-02-21 13:36:31 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Change_Activity
-2020-02-21 13:36:31 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Incident_Activity
-2020-02-21 13:36:31 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Incident_Activity
+2020-03-31 10:06:01 INFO     Executing query: Calculating Volume
+2020-03-31 10:06:01 DEBUG    
+        MATCH()-[e:E_C|DF|E_EN|L_E]->()
+        return count(e)
+    
+2020-03-31 10:06:02 DEBUG    
+        MATCH (n)
+        WHERE n:n:n:Event OR n:Common OR n:Entity OR n:Log
+        return count(n)
+    
+2020-03-31 10:06:16 INFO     Executing query: calculating counts per edge type
+2020-03-31 10:06:16 DEBUG    
+        match ()-[n]->() return type(n), count(n)
+    
+2020-03-31 10:06:47 INFO     Executing query: calculating counts per node type
+2020-03-31 10:06:47 DEBUG    
+        match (n) return labels(n), count(n)
+    
+2020-03-31 10:06:55 INFO     Executing query: Calculating in degree of Event nodes
+2020-03-31 10:06:55 DEBUG    
+                    MATCH (u:Event)
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:09:08 INFO     Executing query: Calculating histogram of in degree of Event nodes
+2020-03-31 10:09:08 DEBUG    
+                           MATCH (u:Event)
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:09:40 INFO     Executing query: Calculating in degree of Event nodes with EntityType: Change
+2020-03-31 10:09:40 DEBUG    
+                    MATCH (u:Event{EntityType: "Change"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:09:55 INFO     Executing query: Calculating histogram of in degree of Event nodes with EntityType: Change
+2020-03-31 10:09:55 DEBUG    
+                           MATCH (u:Event{EntityType: "Change"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:10:04 INFO     Executing query: Calculating in degree of Event nodes with EntityType: Assignment_Group
+2020-03-31 10:10:04 DEBUG    
+                    MATCH (u:Event{EntityType: "Assignment_Group"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:10:25 INFO     Executing query: Calculating histogram of in degree of Event nodes with EntityType: Assignment_Group
+2020-03-31 10:10:25 DEBUG    
+                           MATCH (u:Event{EntityType: "Assignment_Group"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:10:37 INFO     Executing query: Calculating in degree of Event nodes with EntityType: Knowledge_Document
+2020-03-31 10:10:37 DEBUG    
+                    MATCH (u:Event{EntityType: "Knowledge_Document"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:11:09 INFO     Executing query: Calculating histogram of in degree of Event nodes with EntityType: Knowledge_Document
+2020-03-31 10:11:09 DEBUG    
+                           MATCH (u:Event{EntityType: "Knowledge_Document"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:11:24 INFO     Executing query: Calculating in degree of Event nodes with EntityType: Configuration_Item
+2020-03-31 10:11:24 DEBUG    
+                    MATCH (u:Event{EntityType: "Configuration_Item"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:11:50 INFO     Executing query: Calculating histogram of in degree of Event nodes with EntityType: Configuration_Item
+2020-03-31 10:11:50 DEBUG    
+                           MATCH (u:Event{EntityType: "Configuration_Item"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:12:04 INFO     Executing query: Calculating in degree of Event nodes with EntityType: Incident
+2020-03-31 10:12:04 DEBUG    
+                    MATCH (u:Event{EntityType: "Incident"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:12:28 INFO     Executing query: Calculating histogram of in degree of Event nodes with EntityType: Incident
+2020-03-31 10:12:28 DEBUG    
+                           MATCH (u:Event{EntityType: "Incident"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:12:41 INFO     Executing query: Calculating in degree of Event nodes with EntityType: Service_Component
+2020-03-31 10:12:41 DEBUG    
+                    MATCH (u:Event{EntityType: "Service_Component"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:13:10 INFO     Executing query: Calculating histogram of in degree of Event nodes with EntityType: Service_Component
+2020-03-31 10:13:10 DEBUG    
+                           MATCH (u:Event{EntityType: "Service_Component"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:13:24 INFO     Executing query: Calculating in degree of Event nodes with EntityType: Interaction
+2020-03-31 10:13:24 DEBUG    
+                    MATCH (u:Event{EntityType: "Interaction"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:13:53 INFO     Executing query: Calculating histogram of in degree of Event nodes with EntityType: Interaction
+2020-03-31 10:13:53 DEBUG    
+                           MATCH (u:Event{EntityType: "Interaction"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:14:07 INFO     Executing query: Calculating in degree of Event nodes with EntityType: Change_Activity
+2020-03-31 10:14:07 DEBUG    
+                    MATCH (u:Event{EntityType: "Change_Activity"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:14:20 INFO     Executing query: Calculating histogram of in degree of Event nodes with EntityType: Change_Activity
+2020-03-31 10:14:20 DEBUG    
+                           MATCH (u:Event{EntityType: "Change_Activity"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:14:30 INFO     Executing query: Calculating in degree of Event nodes with EntityType: Incident_Activity
+2020-03-31 10:14:30 DEBUG    
+                    MATCH (u:Event{EntityType: "Incident_Activity"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:14:50 INFO     Executing query: Calculating histogram of in degree of Event nodes with EntityType: Incident_Activity
+2020-03-31 10:14:50 DEBUG    
+                           MATCH (u:Event{EntityType: "Incident_Activity"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:15:02 INFO     Executing query: Calculating out degree of Event nodes
+2020-03-31 10:15:02 DEBUG    
+                    MATCH (u:Event)
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:17:25 INFO     Executing query: Calculating histogram of out degree of Event nodes
+2020-03-31 10:17:25 DEBUG    
+                           MATCH (u:Event)
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:17:57 INFO     Executing query: Calculating out degree of Event nodes with EntityType: Change
+2020-03-31 10:17:57 DEBUG    
+                    MATCH (u:Event{EntityType: "Change"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:18:12 INFO     Executing query: Calculating histogram of out degree of Event nodes with EntityType: Change
+2020-03-31 10:18:12 DEBUG    
+                           MATCH (u:Event{EntityType: "Change"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:18:23 INFO     Executing query: Calculating out degree of Event nodes with EntityType: Assignment_Group
+2020-03-31 10:18:23 DEBUG    
+                    MATCH (u:Event{EntityType: "Assignment_Group"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:18:45 INFO     Executing query: Calculating histogram of out degree of Event nodes with EntityType: Assignment_Group
+2020-03-31 10:18:45 DEBUG    
+                           MATCH (u:Event{EntityType: "Assignment_Group"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:18:56 INFO     Executing query: Calculating out degree of Event nodes with EntityType: Knowledge_Document
+2020-03-31 10:18:56 DEBUG    
+                    MATCH (u:Event{EntityType: "Knowledge_Document"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:19:31 INFO     Executing query: Calculating histogram of out degree of Event nodes with EntityType: Knowledge_Document
+2020-03-31 10:19:31 DEBUG    
+                           MATCH (u:Event{EntityType: "Knowledge_Document"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:19:46 INFO     Executing query: Calculating out degree of Event nodes with EntityType: Configuration_Item
+2020-03-31 10:19:46 DEBUG    
+                    MATCH (u:Event{EntityType: "Configuration_Item"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:20:13 INFO     Executing query: Calculating histogram of out degree of Event nodes with EntityType: Configuration_Item
+2020-03-31 10:20:13 DEBUG    
+                           MATCH (u:Event{EntityType: "Configuration_Item"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:20:27 INFO     Executing query: Calculating out degree of Event nodes with EntityType: Incident
+2020-03-31 10:20:27 DEBUG    
+                    MATCH (u:Event{EntityType: "Incident"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:20:56 INFO     Executing query: Calculating histogram of out degree of Event nodes with EntityType: Incident
+2020-03-31 10:20:56 DEBUG    
+                           MATCH (u:Event{EntityType: "Incident"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:21:09 INFO     Executing query: Calculating out degree of Event nodes with EntityType: Service_Component
+2020-03-31 10:21:09 DEBUG    
+                    MATCH (u:Event{EntityType: "Service_Component"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:21:36 INFO     Executing query: Calculating histogram of out degree of Event nodes with EntityType: Service_Component
+2020-03-31 10:21:36 DEBUG    
+                           MATCH (u:Event{EntityType: "Service_Component"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:21:49 INFO     Executing query: Calculating out degree of Event nodes with EntityType: Interaction
+2020-03-31 10:21:49 DEBUG    
+                    MATCH (u:Event{EntityType: "Interaction"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:22:19 INFO     Executing query: Calculating histogram of out degree of Event nodes with EntityType: Interaction
+2020-03-31 10:22:19 DEBUG    
+                           MATCH (u:Event{EntityType: "Interaction"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:22:34 INFO     Executing query: Calculating out degree of Event nodes with EntityType: Change_Activity
+2020-03-31 10:22:34 DEBUG    
+                    MATCH (u:Event{EntityType: "Change_Activity"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:22:47 INFO     Executing query: Calculating histogram of out degree of Event nodes with EntityType: Change_Activity
+2020-03-31 10:22:47 DEBUG    
+                           MATCH (u:Event{EntityType: "Change_Activity"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:22:57 INFO     Executing query: Calculating out degree of Event nodes with EntityType: Incident_Activity
+2020-03-31 10:22:57 DEBUG    
+                    MATCH (u:Event{EntityType: "Incident_Activity"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:23:18 INFO     Executing query: Calculating histogram of out degree of Event nodes with EntityType: Incident_Activity
+2020-03-31 10:23:18 DEBUG    
+                           MATCH (u:Event{EntityType: "Incident_Activity"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:23:32 INFO     Executing query: Calculating in degree of Common nodes
+2020-03-31 10:23:32 DEBUG    
+                    MATCH (u:Common)
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:24:01 INFO     Executing query: Calculating histogram of in degree of Common nodes
+2020-03-31 10:24:01 DEBUG    
+                           MATCH (u:Common)
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:24:09 INFO     Executing query: Calculating out degree of Common nodes
+2020-03-31 10:24:09 DEBUG    
+                    MATCH (u:Common)
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:24:37 INFO     Executing query: Calculating histogram of out degree of Common nodes
+2020-03-31 10:24:37 DEBUG    
+                           MATCH (u:Common)
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:24:44 INFO     Executing query: Calculating in degree of Entity nodes
+2020-03-31 10:24:44 DEBUG    
+                    MATCH (u:Entity)
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:25:02 INFO     Executing query: Calculating histogram of in degree of Entity nodes
+2020-03-31 10:25:02 DEBUG    
+                           MATCH (u:Entity)
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:25:07 INFO     Executing query: Calculating in degree of Entity nodes with EntityType: Change
+2020-03-31 10:25:07 DEBUG    
+                    MATCH (u:Entity{EntityType: "Change"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:25:08 INFO     Executing query: Calculating histogram of in degree of Entity nodes with EntityType: Change
+2020-03-31 10:25:08 DEBUG    
+                           MATCH (u:Entity{EntityType: "Change"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:25:08 INFO     Executing query: Calculating in degree of Entity nodes with EntityType: Assignment_Group
+2020-03-31 10:25:08 DEBUG    
+                    MATCH (u:Entity{EntityType: "Assignment_Group"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:25:08 INFO     Executing query: Calculating histogram of in degree of Entity nodes with EntityType: Assignment_Group
+2020-03-31 10:25:08 DEBUG    
+                           MATCH (u:Entity{EntityType: "Assignment_Group"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:25:08 INFO     Executing query: Calculating in degree of Entity nodes with EntityType: Knowledge_Document
+2020-03-31 10:25:08 DEBUG    
+                    MATCH (u:Entity{EntityType: "Knowledge_Document"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:25:08 INFO     Executing query: Calculating histogram of in degree of Entity nodes with EntityType: Knowledge_Document
+2020-03-31 10:25:08 DEBUG    
+                           MATCH (u:Entity{EntityType: "Knowledge_Document"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:25:09 INFO     Executing query: Calculating in degree of Entity nodes with EntityType: Configuration_Item
+2020-03-31 10:25:09 DEBUG    
+                    MATCH (u:Entity{EntityType: "Configuration_Item"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:25:09 INFO     Executing query: Calculating histogram of in degree of Entity nodes with EntityType: Configuration_Item
+2020-03-31 10:25:09 DEBUG    
+                           MATCH (u:Entity{EntityType: "Configuration_Item"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:25:09 INFO     Executing query: Calculating in degree of Entity nodes with EntityType: Incident
+2020-03-31 10:25:09 DEBUG    
+                    MATCH (u:Entity{EntityType: "Incident"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:25:11 INFO     Executing query: Calculating histogram of in degree of Entity nodes with EntityType: Incident
+2020-03-31 10:25:11 DEBUG    
+                           MATCH (u:Entity{EntityType: "Incident"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:25:11 INFO     Executing query: Calculating in degree of Entity nodes with EntityType: Service_Component
+2020-03-31 10:25:11 DEBUG    
+                    MATCH (u:Entity{EntityType: "Service_Component"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:25:11 INFO     Executing query: Calculating histogram of in degree of Entity nodes with EntityType: Service_Component
+2020-03-31 10:25:11 DEBUG    
+                           MATCH (u:Entity{EntityType: "Service_Component"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:25:11 INFO     Executing query: Calculating in degree of Entity nodes with EntityType: Interaction
+2020-03-31 10:25:11 DEBUG    
+                    MATCH (u:Entity{EntityType: "Interaction"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:25:15 INFO     Executing query: Calculating histogram of in degree of Entity nodes with EntityType: Interaction
+2020-03-31 10:25:15 DEBUG    
+                           MATCH (u:Entity{EntityType: "Interaction"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:25:16 INFO     Executing query: Calculating in degree of Entity nodes with EntityType: Change_Activity
+2020-03-31 10:25:16 DEBUG    
+                    MATCH (u:Entity{EntityType: "Change_Activity"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:25:17 INFO     Executing query: Calculating histogram of in degree of Entity nodes with EntityType: Change_Activity
+2020-03-31 10:25:17 DEBUG    
+                           MATCH (u:Entity{EntityType: "Change_Activity"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:25:17 INFO     Executing query: Calculating in degree of Entity nodes with EntityType: Incident_Activity
+2020-03-31 10:25:17 DEBUG    
+                    MATCH (u:Entity{EntityType: "Incident_Activity"})
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:25:28 INFO     Executing query: Calculating histogram of in degree of Entity nodes with EntityType: Incident_Activity
+2020-03-31 10:25:28 DEBUG    
+                           MATCH (u:Entity{EntityType: "Incident_Activity"})
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:25:31 INFO     Executing query: Calculating out degree of Entity nodes
+2020-03-31 10:25:31 DEBUG    
+                    MATCH (u:Entity)
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:25:52 INFO     Executing query: Calculating histogram of out degree of Entity nodes
+2020-03-31 10:25:52 DEBUG    
+                           MATCH (u:Entity)
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:25:57 INFO     Executing query: Calculating out degree of Entity nodes with EntityType: Change
+2020-03-31 10:25:57 DEBUG    
+                    MATCH (u:Entity{EntityType: "Change"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:25:57 INFO     Executing query: Calculating histogram of out degree of Entity nodes with EntityType: Change
+2020-03-31 10:25:57 DEBUG    
+                           MATCH (u:Entity{EntityType: "Change"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:25:58 INFO     Executing query: Calculating out degree of Entity nodes with EntityType: Assignment_Group
+2020-03-31 10:25:58 DEBUG    
+                    MATCH (u:Entity{EntityType: "Assignment_Group"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:25:58 INFO     Executing query: Calculating histogram of out degree of Entity nodes with EntityType: Assignment_Group
+2020-03-31 10:25:58 DEBUG    
+                           MATCH (u:Entity{EntityType: "Assignment_Group"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:25:58 INFO     Executing query: Calculating out degree of Entity nodes with EntityType: Knowledge_Document
+2020-03-31 10:25:58 DEBUG    
+                    MATCH (u:Entity{EntityType: "Knowledge_Document"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:25:58 INFO     Executing query: Calculating histogram of out degree of Entity nodes with EntityType: Knowledge_Document
+2020-03-31 10:25:58 DEBUG    
+                           MATCH (u:Entity{EntityType: "Knowledge_Document"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:25:58 INFO     Executing query: Calculating out degree of Entity nodes with EntityType: Configuration_Item
+2020-03-31 10:25:58 DEBUG    
+                    MATCH (u:Entity{EntityType: "Configuration_Item"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:25:58 INFO     Executing query: Calculating histogram of out degree of Entity nodes with EntityType: Configuration_Item
+2020-03-31 10:25:58 DEBUG    
+                           MATCH (u:Entity{EntityType: "Configuration_Item"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:25:59 INFO     Executing query: Calculating out degree of Entity nodes with EntityType: Incident
+2020-03-31 10:25:59 DEBUG    
+                    MATCH (u:Entity{EntityType: "Incident"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:26:00 INFO     Executing query: Calculating histogram of out degree of Entity nodes with EntityType: Incident
+2020-03-31 10:26:00 DEBUG    
+                           MATCH (u:Entity{EntityType: "Incident"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:26:01 INFO     Executing query: Calculating out degree of Entity nodes with EntityType: Service_Component
+2020-03-31 10:26:01 DEBUG    
+                    MATCH (u:Entity{EntityType: "Service_Component"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:26:01 INFO     Executing query: Calculating histogram of out degree of Entity nodes with EntityType: Service_Component
+2020-03-31 10:26:01 DEBUG    
+                           MATCH (u:Entity{EntityType: "Service_Component"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:26:01 INFO     Executing query: Calculating out degree of Entity nodes with EntityType: Interaction
+2020-03-31 10:26:01 DEBUG    
+                    MATCH (u:Entity{EntityType: "Interaction"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:26:04 INFO     Executing query: Calculating histogram of out degree of Entity nodes with EntityType: Interaction
+2020-03-31 10:26:04 DEBUG    
+                           MATCH (u:Entity{EntityType: "Interaction"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:26:06 INFO     Executing query: Calculating out degree of Entity nodes with EntityType: Change_Activity
+2020-03-31 10:26:06 DEBUG    
+                    MATCH (u:Entity{EntityType: "Change_Activity"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:26:07 INFO     Executing query: Calculating histogram of out degree of Entity nodes with EntityType: Change_Activity
+2020-03-31 10:26:07 DEBUG    
+                           MATCH (u:Entity{EntityType: "Change_Activity"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:26:07 INFO     Executing query: Calculating out degree of Entity nodes with EntityType: Incident_Activity
+2020-03-31 10:26:07 DEBUG    
+                    MATCH (u:Entity{EntityType: "Incident_Activity"})
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:26:18 INFO     Executing query: Calculating histogram of out degree of Entity nodes with EntityType: Incident_Activity
+2020-03-31 10:26:18 DEBUG    
+                           MATCH (u:Entity{EntityType: "Incident_Activity"})
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:26:21 INFO     Executing query: Calculating in degree of Log nodes
+2020-03-31 10:26:21 DEBUG    
+                    MATCH (u:Log)
+                    RETURN avg(apoc.node.degree(u,'<')) as average,
+                    stdev(apoc.node.degree(u,'<')) as stdev,
+                    max(apoc.node.degree(u,'<')) as max,
+                    min(apoc.node.degree(u,'<')) as min
+                
+2020-03-31 10:26:21 INFO     Executing query: Calculating histogram of in degree of Log nodes
+2020-03-31 10:26:21 DEBUG    
+                           MATCH (u:Log)
+                           RETURN apoc.node.degree(u,'<'), count(u)
+                       
+2020-03-31 10:26:21 INFO     Executing query: Calculating out degree of Log nodes
+2020-03-31 10:26:21 DEBUG    
+                    MATCH (u:Log)
+                    RETURN avg(apoc.node.degree(u,'>')) as average,
+                    stdev(apoc.node.degree(u,'>')) as stdev,
+                    max(apoc.node.degree(u,'>')) as max,
+                    min(apoc.node.degree(u,'>')) as min
+                
+2020-03-31 10:26:21 INFO     Executing query: Calculating histogram of out degree of Log nodes
+2020-03-31 10:26:21 DEBUG    
+                           MATCH (u:Log)
+                           RETURN apoc.node.degree(u,'>'), count(u)
+                       
+2020-03-31 10:26:35 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Change
+2020-03-31 10:26:35 DEBUG    
+            MATCH (n:Entity {EntityType: 'Change'})
+            OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+            WITH n, count(e) as nr_events
+            unwind [nr_events,0] as path_length
+            with n, max(path_length) as path_length
+            RETURN avg(path_length) as average,
+            stdev(path_length) as stdev,
+            max(path_length) as max,
+            min(path_length) as min
+        
+2020-03-31 10:26:36 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Change
+2020-03-31 10:26:36 DEBUG    
+                MATCH (n:Entity {EntityType: 'Change'})
+                OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+                WITH n, count(e) as nr_events
+                unwind [nr_events,0] as path_length
+                with n, max(path_length) as path_length
+                RETURN path_length, count(n)
+            
+2020-03-31 10:26:37 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Assignment_Group
+2020-03-31 10:26:37 DEBUG    
+            MATCH (n:Entity {EntityType: 'Assignment_Group'})
+            OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+            WITH n, count(e) as nr_events
+            unwind [nr_events,0] as path_length
+            with n, max(path_length) as path_length
+            RETURN avg(path_length) as average,
+            stdev(path_length) as stdev,
+            max(path_length) as max,
+            min(path_length) as min
+        
+2020-03-31 10:26:38 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Assignment_Group
+2020-03-31 10:26:38 DEBUG    
+                MATCH (n:Entity {EntityType: 'Assignment_Group'})
+                OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+                WITH n, count(e) as nr_events
+                unwind [nr_events,0] as path_length
+                with n, max(path_length) as path_length
+                RETURN path_length, count(n)
+            
+2020-03-31 10:26:39 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Knowledge_Document
+2020-03-31 10:26:39 DEBUG    
+            MATCH (n:Entity {EntityType: 'Knowledge_Document'})
+            OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+            WITH n, count(e) as nr_events
+            unwind [nr_events,0] as path_length
+            with n, max(path_length) as path_length
+            RETURN avg(path_length) as average,
+            stdev(path_length) as stdev,
+            max(path_length) as max,
+            min(path_length) as min
+        
+2020-03-31 10:26:40 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Knowledge_Document
+2020-03-31 10:26:40 DEBUG    
+                MATCH (n:Entity {EntityType: 'Knowledge_Document'})
+                OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+                WITH n, count(e) as nr_events
+                unwind [nr_events,0] as path_length
+                with n, max(path_length) as path_length
+                RETURN path_length, count(n)
+            
+2020-03-31 10:26:41 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Configuration_Item
+2020-03-31 10:26:41 DEBUG    
+            MATCH (n:Entity {EntityType: 'Configuration_Item'})
+            OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+            WITH n, count(e) as nr_events
+            unwind [nr_events,0] as path_length
+            with n, max(path_length) as path_length
+            RETURN avg(path_length) as average,
+            stdev(path_length) as stdev,
+            max(path_length) as max,
+            min(path_length) as min
+        
+2020-03-31 10:26:43 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Configuration_Item
+2020-03-31 10:26:43 DEBUG    
+                MATCH (n:Entity {EntityType: 'Configuration_Item'})
+                OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+                WITH n, count(e) as nr_events
+                unwind [nr_events,0] as path_length
+                with n, max(path_length) as path_length
+                RETURN path_length, count(n)
+            
+2020-03-31 10:26:44 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Incident
+2020-03-31 10:26:44 DEBUG    
+            MATCH (n:Entity {EntityType: 'Incident'})
+            OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+            WITH n, count(e) as nr_events
+            unwind [nr_events,0] as path_length
+            with n, max(path_length) as path_length
+            RETURN avg(path_length) as average,
+            stdev(path_length) as stdev,
+            max(path_length) as max,
+            min(path_length) as min
+        
+2020-03-31 10:26:45 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Incident
+2020-03-31 10:26:45 DEBUG    
+                MATCH (n:Entity {EntityType: 'Incident'})
+                OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+                WITH n, count(e) as nr_events
+                unwind [nr_events,0] as path_length
+                with n, max(path_length) as path_length
+                RETURN path_length, count(n)
+            
+2020-03-31 10:26:47 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Service_Component
+2020-03-31 10:26:47 DEBUG    
+            MATCH (n:Entity {EntityType: 'Service_Component'})
+            OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+            WITH n, count(e) as nr_events
+            unwind [nr_events,0] as path_length
+            with n, max(path_length) as path_length
+            RETURN avg(path_length) as average,
+            stdev(path_length) as stdev,
+            max(path_length) as max,
+            min(path_length) as min
+        
+2020-03-31 10:26:49 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Service_Component
+2020-03-31 10:26:49 DEBUG    
+                MATCH (n:Entity {EntityType: 'Service_Component'})
+                OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+                WITH n, count(e) as nr_events
+                unwind [nr_events,0] as path_length
+                with n, max(path_length) as path_length
+                RETURN path_length, count(n)
+            
+2020-03-31 10:26:50 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Interaction
+2020-03-31 10:26:50 DEBUG    
+            MATCH (n:Entity {EntityType: 'Interaction'})
+            OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+            WITH n, count(e) as nr_events
+            unwind [nr_events,0] as path_length
+            with n, max(path_length) as path_length
+            RETURN avg(path_length) as average,
+            stdev(path_length) as stdev,
+            max(path_length) as max,
+            min(path_length) as min
+        
+2020-03-31 10:26:53 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Interaction
+2020-03-31 10:26:53 DEBUG    
+                MATCH (n:Entity {EntityType: 'Interaction'})
+                OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+                WITH n, count(e) as nr_events
+                unwind [nr_events,0] as path_length
+                with n, max(path_length) as path_length
+                RETURN path_length, count(n)
+            
+2020-03-31 10:27:03 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Change_Activity
+2020-03-31 10:27:03 DEBUG    
+            MATCH (n:Entity {EntityType: 'Change_Activity'})
+            OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+            WITH n, count(e) as nr_events
+            unwind [nr_events,0] as path_length
+            with n, max(path_length) as path_length
+            RETURN avg(path_length) as average,
+            stdev(path_length) as stdev,
+            max(path_length) as max,
+            min(path_length) as min
+        
+2020-03-31 10:27:06 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Change_Activity
+2020-03-31 10:27:06 DEBUG    
+                MATCH (n:Entity {EntityType: 'Change_Activity'})
+                OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+                WITH n, count(e) as nr_events
+                unwind [nr_events,0] as path_length
+                with n, max(path_length) as path_length
+                RETURN path_length, count(n)
+            
+2020-03-31 10:27:07 INFO     Executing query: Calculating lengths of df paths for entities with EntityType: Incident_Activity
+2020-03-31 10:27:07 DEBUG    
+            MATCH (n:Entity {EntityType: 'Incident_Activity'})
+            OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+            WITH n, count(e) as nr_events
+            unwind [nr_events,0] as path_length
+            with n, max(path_length) as path_length
+            RETURN avg(path_length) as average,
+            stdev(path_length) as stdev,
+            max(path_length) as max,
+            min(path_length) as min
+        
+2020-03-31 10:27:17 INFO     Executing query: Calculating histogram of lengths of df paths for entities with EntityType: Incident_Activity
+2020-03-31 10:27:17 DEBUG    
+                MATCH (n:Entity {EntityType: 'Incident_Activity'})
+                OPTIONAL MATCH (n)<-[:E_EN]-(e:Event)
+                WITH n, count(e) as nr_events
+                unwind [nr_events,0] as path_length
+                with n, max(path_length) as path_length
+                RETURN path_length, count(n)
+            

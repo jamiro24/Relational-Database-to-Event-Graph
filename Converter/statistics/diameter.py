@@ -2,50 +2,64 @@ from database.neo4j_connection import Neo4JConnection
 from statistics import csv
 from config.config import Config
 import functools
+from os import path
+import pandas as pd
+import networkx as nx
 
 
-def calculate(neo4j: Neo4JConnection, config: Config):
-    nodetypes = ["Event", "Common", "Entity", "Log"]
-    relationtypes = ["E_C", "DF", "E_EN", "L_E"]
-    results = []
+def calculate(neo4j: Neo4JConnection):
+    if not path.exists("statistics-csv/relationships.csv"):
+        __retrieve_relationship_data(neo4j)
+    else:
+        print("Found existing relationship data, not retrieving new data")
+        print("Delete the file 'statistics/relationships.csv' and rerun the diameter calculation to retrieve new data")
 
-    for i in range(-1, len(relationtypes)):
-        current_relation_types = relationtypes
-        message = "calculating diameter"
+    diameters = []
 
-        if i > 0:
-            message += f"without {relationtypes[i]} relationships"
-            del current_relation_types[i]
+    relationships = pd.read_csv('statistics-csv/relationships.csv')
+    rel_filter = ~relationships['rel_type'].str.contains('-')
+    relationships = relationships[rel_filter]
 
-        result = neo4j.query(f"""
-            match (n), (m)
-            where n <> m
-            AND ({functools.reduce(lambda a,b : f'n:{a} OR n:{b}', nodetypes)})
-            with n, m
-            match p=shortestPath((n)-[:{functools.reduce(lambda a,b : f'{a}|{b}', current_relation_types)}*]-(m))
-            return ID(n), ID(m), length(p)
-            order by length(p) desc limit 1
-        """, message)
+    # diameters.append(['none', __calc(relationships)])
 
-        if i > 0:
-            results.append([relationtypes[i]] + result[0])
-        else:
-            results.append(['-'] + result[0])
+    le_filter = ~(relationships['rel_type'].str.contains('L_E'))
+    relationships = relationships[le_filter]
+    diameters.append(['no L_E', __calc(relationships)])
 
-    csv.write(results, ["without", "source", "target", "length"], "diameter")
+    csv.write(diameters, ['restriction', 'diameter'], 'diameter')
 
 
-def calculate_v2(neo4j: Neo4JConnection, config: Config):
-    nodetypes = ["Event", "Common", "Entity", "Log"]
+def __calc(relationships: pd.DataFrame):
+    sources = relationships['source_id'].to_list()
+    targets = relationships['target_id'].to_list()
+    relationships = [(sources[i], targets[i]) for i in range(0, len(sources))]
 
-    adj_matrix = neo4j.query(f"""
-        match (n), (m)
-        WHERE ({functools.reduce(lambda a,b : f'n:{a} OR n:{b}', nodetypes)})
-        return ID(n), ID(m),
-        case 
-        when (n)-->(m) then 1
-        else 0
-        end as value
-    """, "calculating the adjacency matrix")
+    g = nx.Graph()
+    g.add_edges_from(relationships)
 
-    csv.write(adj_matrix, ["source", "target", "connects"], "adjacency matrix")
+    diameter = -1
+
+    if nx.is_connected(g):
+        diameter = nx.diameter(g)
+    else:
+        components = nx.weakly_connected_components(g)
+
+        for component in components:
+            comp_diameter = nx.diameter(component)
+            print(comp_diameter)
+            diameter = max(diameter, comp_diameter)
+
+    return diameter
+
+
+def __retrieve_relationship_data(neo4j: Neo4JConnection):
+    results = neo4j.query("""
+        match (s)-[r]->(t)
+        return ID(s) as sourceID, labels(s) as sourceLabels, ID(t) as targetID, labels(t) as targetLabels, type(r) as relationType
+    """)
+
+    for result in results:
+        result[1] = result[1][0]
+        result[3] = result[3][0]
+
+    csv.write(results, ['source_id', 'source_label', 'target_id', 'target_label', 'rel_type'], 'relationships')

@@ -1,6 +1,10 @@
 from database.neo4j_connection import Neo4JConnection
 from statistics import csv
 from config.config import Config
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import os
 
 
 def calculate(neo4j: Neo4JConnection, config: Config):
@@ -15,7 +19,7 @@ def calculate(neo4j: Neo4JConnection, config: Config):
 
             simple_result = __simple(neo4j, nodetype, dir)
             simple_results.append([f'{nodetype}', direction] + simple_result[0])
-            histogram_result = __histogram(neo4j, nodetype, dir)
+            histogram_result = __histogram_query_data(neo4j, nodetype, dir)
             for entree in histogram_result:
                 histogram_results.append([f'{nodetype}', direction] + entree)
 
@@ -23,7 +27,7 @@ def calculate(neo4j: Neo4JConnection, config: Config):
                 for entity_type in config['entity'] + config['non_entity']:
                     simple_result = __simple(neo4j, nodetype, dir, entity_type['label'])
                     simple_results.append([f'{nodetype}: {entity_type["label"]}', direction] + simple_result[0])
-                    histogram_result = __histogram(neo4j, nodetype, dir, entity_type['label'])
+                    histogram_result = __histogram_query_data(neo4j, nodetype, dir, entity_type['label'])
                     for entree in histogram_result:
                         histogram_results.append([f'{nodetype}: {entity_type["label"]}', direction] + entree)
 
@@ -57,7 +61,7 @@ def __simple(neo4j: Neo4JConnection, nodetype: str, dir: str, entity_label: str 
                 """, message)
 
 
-def __histogram(neo4j: Neo4JConnection, nodetype: str, dir: str, entity_label: str = None):
+def __histogram_query_data(neo4j: Neo4JConnection, nodetype: str, dir: str, entity_label: str = None):
     direction = "in" if dir == "<" else "out"
 
     match = f'MATCH (u:{nodetype}'
@@ -70,6 +74,63 @@ def __histogram(neo4j: Neo4JConnection, nodetype: str, dir: str, entity_label: s
     match += ')'
 
     return neo4j.query(f"""
-                        {match}
-                        RETURN apoc.node.degree(u,'{dir}'), count(u)
-                    """, message)
+                           {match}
+                           RETURN apoc.node.degree(u,'{dir}'), count(u)
+                       """, message)
+
+
+def histograms_produce(csv_name: str, max_nr_buckets=10):
+
+    if not os.path.exists('statistics-csv/images'):
+        os.makedirs('statistics-csv/images')
+
+    hist_frame = pd.read_csv(f'statistics-csv/{csv_name}.csv')
+    split_hist_frames = []
+    hist_frame['category'] = hist_frame['node type'] + ' ' + hist_frame['direction']
+    categories = hist_frame['category'].unique()
+
+    for category in categories:
+        category_filter = hist_frame['category'] == category
+        filtered_frame = hist_frame[category_filter]
+        split_hist_frames.append(filtered_frame)
+
+    del hist_frame
+
+    for split_hist_frame in split_hist_frames:
+        category = split_hist_frame['category'].unique()[0]
+        node_type = split_hist_frame['node type'].unique()[0]
+        direction = split_hist_frame['direction'].unique()[0]
+
+        max_degree = split_hist_frame['degree'].max()
+        min_degree = split_hist_frame['degree'].min()
+
+        diff_degree = max_degree - min_degree
+        nr_buckets = min(diff_degree + 1, max_nr_buckets)
+
+        buckets = np.arange(min_degree, max_degree, diff_degree / nr_buckets) if diff_degree else np.array([0])
+        buckets = np.append(buckets, max_degree)
+        buckets = np.floor(buckets)
+        buckets = np.unique(buckets)
+
+        if np.size(buckets) == 1:
+            buckets = np.append(buckets, buckets[0] + 1)
+
+        counts = split_hist_frame['count'].array
+        degrees = split_hist_frame['degree'].array
+
+        hist_data = []
+        for i in range(0, split_hist_frame.shape[0]):
+            hist_data += counts[i] * [degrees[i]]
+        plt.title(node_type)
+        plt.ylabel('Number of occurrences')
+        plt.xlabel(f'Node {direction} degree')
+        plt.yscale('log', nonposy='clip')
+        plt.xticks(buckets, rotation=15)
+        plt.hist(hist_data, bins=buckets, color='grey')
+        category = category.replace(': ', '-')
+        plt.tight_layout()
+        plt.savefig(f'statistics-csv/images/degree-hist-{category}.png')
+        plt.clf()
+        plt.cla()
+
+

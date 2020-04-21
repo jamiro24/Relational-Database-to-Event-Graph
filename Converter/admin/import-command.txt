@@ -1,0 +1,1 @@
+bin/neo4j-admin import --relationships="import/edges.csv" --nodes="import/nodes-offer_events.csv" --nodes="import/nodes-offers.csv" --nodes="import/nodes-application_events.csv" --nodes="import/nodes-applications.csv" --nodes="import/nodes-resources.csv" --nodes="import/nodes-workflow_events.csv" --nodes="import/nodes-workflows.csv"

@@ -8,3 +8,4 @@
 *.db-journal
 *.pdf
 **/__pycache__
+**/statistics-csv
