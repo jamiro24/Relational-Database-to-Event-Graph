@@ -10,7 +10,6 @@ log = Logger.instance()
 # @config: Root configuration
 def create(neo4j: Neo4JConnection, config: Config):
     entities_config = config['entity']
-    non_entities_config = config['non_entity']
 
     # Create events from sources that are entities
     for entity_config in entities_config:
@@ -23,16 +22,6 @@ def create(neo4j: Neo4JConnection, config: Config):
             for create_from in event_config['create_from']:
                 __create_events(neo4j, create_from, entity_config)
             __cleanup_temp(neo4j)
-
-    # Create events from sources that are non-entity
-    for non_entity_config in non_entities_config:
-        __create_temp_events(neo4j, non_entity_config, entities_config)
-        event_config = non_entity_config['event']
-
-        # Clone template events for each set of columns that need to result in event nodes
-        for create_from in event_config['create_from']:
-            __create_events(neo4j, create_from, non_entity_config)
-        __cleanup_temp(neo4j)
 
 
 # removes all template events from the database

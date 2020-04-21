@@ -32,6 +32,7 @@ def create_schema(conn:sqlite3.Connection):
     	    "ApplicationID"	TEXT,
     	    FOREIGN KEY("ApplicationID") REFERENCES "applications"("ApplicationID"),
     	    FOREIGN KEY("resource") REFERENCES "resources"("resource"),
+    	    FOREIGN KEY("OfferID") REFERENCES "offers"("OfferID"),
     	    PRIMARY KEY("EventID")
         );
     """)
@@ -87,6 +88,7 @@ def create_schema(conn:sqlite3.Connection):
             "WorkflowID"	TEXT,
             PRIMARY KEY("EventID"),
             FOREIGN KEY("resource") REFERENCES "resources"("resource"),
+            FOREIGN KEY("OfferID") REFERENCES "offers"("OfferID"),
             FOREIGN KEY("WorkflowID") REFERENCES "workflows"("WorkflowID")
         );
     """)

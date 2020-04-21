@@ -10,10 +10,9 @@ log = Logger.instance()
 # # @config: Root configuration
 def create(neo4j: Neo4JConnection, config: Config):
     entities = config['entity']
-    non_entities = config['non_entity']
     log_name = config['log']['name']
 
-    for entity in entities + non_entities:
+    for entity in entities:
         label = entity['label']
         id_column = entity["id_column"]
 
