@@ -12,7 +12,7 @@ def calculate(neo4j: Neo4JConnection, config: Config):
     results = []
     results_histogram = []
 
-    for entitytype in config['entity'] + config['non_entity']:
+    for entitytype in config['entity']:
         label = entitytype['label']
 
         result = __simple(neo4j, label)

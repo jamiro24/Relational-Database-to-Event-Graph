@@ -8,7 +8,7 @@ import networkx as nx
 
 
 def calculate(neo4j: Neo4JConnection):
-    if not path.exists("statistics-csv/relationships.csv"):
+    if not path.exists("statistics-csv.bpi14/relationships.csv"):
         __retrieve_relationship_data(neo4j)
     else:
         print("Found existing relationship data, not retrieving new data")
@@ -16,7 +16,7 @@ def calculate(neo4j: Neo4JConnection):
 
     diameters = []
 
-    relationships = pd.read_csv('statistics-csv/relationships.csv')
+    relationships = pd.read_csv('statistics-csv.bpi14/relationships.csv')
     rel_filter = ~relationships['rel_type'].str.contains('-')
     relationships = relationships[rel_filter]
 

@@ -22,6 +22,7 @@ def create_schema(conn:sqlite3.Connection):
 
     conn.execute("""
         CREATE TABLE "application_events" (
+            "ID"        TEXT,
     	    "Action"	TEXT,
     	    "resource"	TEXT,
     	    "Activity"	TEXT,
@@ -33,7 +34,7 @@ def create_schema(conn:sqlite3.Connection):
     	    FOREIGN KEY("ApplicationID") REFERENCES "applications"("ApplicationID"),
     	    FOREIGN KEY("resource") REFERENCES "resources"("resource"),
     	    FOREIGN KEY("OfferID") REFERENCES "offers"("OfferID"),
-    	    PRIMARY KEY("EventID")
+    	    PRIMARY KEY("ID")
         );
     """)
 
@@ -55,6 +56,7 @@ def create_schema(conn:sqlite3.Connection):
 
     conn.execute("""
         CREATE TABLE "offer_events" (
+            "ID"        TEXT,
             "Action"	TEXT,
             "resource"	TEXT,
             "Activity"	TEXT,
@@ -63,7 +65,7 @@ def create_schema(conn:sqlite3.Connection):
             "startTime"	TEXT,
             "completeTime"	TEXT,
             FOREIGN KEY("OfferID") REFERENCES "offers"("OfferID"),
-            PRIMARY KEY("EventID"),
+            PRIMARY KEY("ID"),
             FOREIGN KEY("resource") REFERENCES "resources"("resource")
         );
     """)
@@ -78,6 +80,7 @@ def create_schema(conn:sqlite3.Connection):
 
     conn.execute("""
         CREATE TABLE "workflow_events" (
+            "ID"        TEXT,
             "Action"	TEXT,
             "resource"	TEXT,
             "Activity"	TEXT,
@@ -86,7 +89,7 @@ def create_schema(conn:sqlite3.Connection):
             "startTime"	TEXT,
             "completeTime"	TEXT,
             "WorkflowID"	TEXT,
-            PRIMARY KEY("EventID"),
+            PRIMARY KEY("ID"),
             FOREIGN KEY("resource") REFERENCES "resources"("resource"),
             FOREIGN KEY("OfferID") REFERENCES "offers"("OfferID"),
             FOREIGN KEY("WorkflowID") REFERENCES "workflows"("WorkflowID")

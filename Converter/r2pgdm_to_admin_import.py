@@ -11,16 +11,16 @@ if not os.path.exists("admin"):
     os.mkdir("admin")
 
 # region Transform edge table
-print('processing edges')
-edges = pd.read_sql(sql="select * from edge", con=input_conn, )
-edges = edges.rename(columns={
-    'id': 'edgeid',
-    'srcId': ':START_ID',
-    'tgtId': ':END_ID',
-    'label': ':TYPE'
-})
-edges = edges.drop_duplicates(subset=[':START_ID', ':END_ID'])  # We don't want duplicate edges in our transformation
-edges.to_csv("admin/edges.csv", sep=",", index=False)
+# print('processing edges')
+# edges = pd.read_sql(sql="select * from edge", con=input_conn, )
+# edges = edges.rename(columns={
+#     'id': 'edgeid',
+#     'srcId': ':START_ID',
+#     'tgtId': ':END_ID',
+#     'label': ':TYPE'
+# })
+# edges = edges.drop_duplicates(subset=[':START_ID', ':END_ID'])  # We don't want duplicate edges in our transformation
+# edges.to_csv("admin/edges.csv", sep=",", index=False)
 # endregion
 
 # region read metadata

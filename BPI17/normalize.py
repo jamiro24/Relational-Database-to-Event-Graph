@@ -50,7 +50,8 @@ application_frame.to_csv(f'{intermediary_dir}/applications.csv', sep=',', index=
 
 application_events_frame = application_log_frame[event_attributes]
 application_events_frame.loc[:, 'ApplicationID'] = application_log_frame.loc[:, 'case']
-application_events_frame.to_csv(f'{intermediary_dir}/application_events.csv', sep=',', index=False)
+application_events_frame.index.name = "ID"
+application_events_frame.to_csv(f'{intermediary_dir}/application_events.csv', sep=',')
 print("1/4")
 
 offer_filter = log_frame['EventOrigin'] == 'Offer'
@@ -65,7 +66,8 @@ del offer_frame['RequestedAmount']
 offer_frame.to_csv(f'{intermediary_dir}/offers.csv', sep=',', index=False)
 
 offer_events_frame = offer_log_frame[event_attributes]
-offer_events_frame.to_csv(f'{intermediary_dir}/offer_events.csv', sep=',', index=False)
+offer_events_frame.index.name = "ID"
+offer_events_frame.to_csv(f'{intermediary_dir}/offer_events.csv', sep=',')
 print("2/4")    
 
 workflow_filter = log_frame['EventOrigin'] == 'Workflow'
@@ -76,7 +78,8 @@ workflow_frame.to_csv(f'{intermediary_dir}/workflows.csv', sep=',', index=False)
 
 workflow_events_frame = workflow_log_frame[event_attributes]
 workflow_events_frame.loc[:, 'WorkflowID'] = workflow_log_frame.loc[:, 'case']
-workflow_events_frame.to_csv(f'{intermediary_dir}/workflow_events.csv', sep=',', index=False)
+workflow_events_frame.index.name = "ID"
+workflow_events_frame.to_csv(f'{intermediary_dir}/workflow_events.csv', sep=',')
 print("3/4")
 
 resource_frame = log_frame[['org:resource']].drop_duplicates()
@@ -99,7 +102,7 @@ for file in work_dir.joinpath("intermediary").glob('**/*'):
     frame = pd.read_csv(f'{file.parent}/{file.name}')
     remove_illegal_chars(frame)
     cleanup(frame)
-    frame = frame.drop_duplicates()
+    frame = frame
     frame.to_sql(con=conn, name=name, index=False, if_exists='append')
 
 print("done")

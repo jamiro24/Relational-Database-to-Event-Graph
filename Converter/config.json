@@ -12,7 +12,7 @@
   "entity": [
     {
       "label": "application_events",
-      "id_column": "EventID",
+      "id_column": "ID",
       "event": {
         "related_entities": [">applications", ">resources", ">offers"],
         "create_from": [
@@ -31,7 +31,7 @@
     },
     {
       "label": "offer_events",
-      "id_column": "EventID",
+      "id_column": "ID",
       "event": {
         "related_entities": [">offers", ">resources", ">offers", ">offers:>applications"],
         "create_from": [
@@ -50,7 +50,7 @@
     },
     {
       "label": "workflow_events",
-      "id_column": "EventID",
+      "id_column": "ID",
       "event": {
         "related_entities": [">workflows", ">resources", ">offers", ">offers:>applications"],
         "create_from": [

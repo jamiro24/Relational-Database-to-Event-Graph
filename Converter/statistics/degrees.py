@@ -24,7 +24,7 @@ def calculate(neo4j: Neo4JConnection, config: Config):
                 histogram_results.append([f'{nodetype}', direction] + entree)
 
             if nodetype in ["Event", "Entity"]:
-                for entity_type in config['entity'] + config['non_entity']:
+                for entity_type in config['entity']:
                     simple_result = __simple(neo4j, nodetype, dir, entity_type['label'])
                     simple_results.append([f'{nodetype}: {entity_type["label"]}', direction] + simple_result[0])
                     histogram_result = __histogram_query_data(neo4j, nodetype, dir, entity_type['label'])

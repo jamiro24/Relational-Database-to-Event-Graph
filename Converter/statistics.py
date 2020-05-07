@@ -3,7 +3,6 @@ import os
 from config.config import Config
 from database.neo4j_connection import Neo4JConnection
 from log.logger import Logger
-from log.logger import INFO
 
 from statistics import counts
 from statistics import degrees
@@ -29,4 +28,5 @@ degrees.histograms_produce('degrees_histogram')
 
 df_path_length.calculate(neo4j, config)
 df_path_length.histograms_produce('df-path-length_histogram')
-#diameter.calculate(neo4j)
+# diameter.calculate(neo4j)
+
