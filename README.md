@@ -13,4 +13,5 @@ This transformation is meant to be used with Neo4j 3.5.15. Neo4J 4.0 and higher 
 Below you can download two Neo4j Database dumps. The nodes in these dump are named differently than what the converter output, due to a naming change late in the project.
 
 BPI 14 dump: https://mega.nz/file/hIcnGSyI#-DhjT6qiv4GgrqO41V6zD0ETH_EJwvvoazwiPW7iOq0
+
 BPI 17 dump: https://mega.nz/file/gMcgDCwD#QYkdiTNXRKmSJiNgLcLWVW_LLpjBDLx3iByfE0r_9M4
